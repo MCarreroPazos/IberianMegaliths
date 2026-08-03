@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <title>IntCal Instructions</title>
+    <link rel="stylesheet" type="text/css" href="../style/OxCal.css">
+  </head>
+  <body>
+    <h1>IntCal data<br>
+    </h1>
+    <p>The information here covers the data within the IntCal database
+      and is relevant for those using this data or preparing data for
+      possible inclusion in future iterations of the IntCal curve
+      series. There are four key types of data which are included in the
+      IntCal repository. These are:</p>
+    <ul>
+      <li><a href="#Record_information">Record information</a></li>
+      <li><a href="#Radiocarbon_datasets">Radiocarbon datasets</a></li>
+      <li><a href="#Radiocarbon_datasets">Dendrochronological data</a></li>
+      <li><a href="#Publications">Publications</a></li>
+    </ul>
+    <p>See also details on <a href="#Preparing">preparing data for
+        inclusion</a>. </p>
+    <ul>
+    </ul>
+    <h2><a name="Record_information"></a>Record information</h2>
+    <p>The records for IntCal are in the standard format described in
+      the <a href="https://intchron.org/schema">IntChron schema</a>.&nbsp;
+
+
+
+
+
+
+
+
+
+      The key parameters relevant to the calibration curve are:<br>
+    </p>
+    <ul>
+      <li><a href="https://intchron.org/schema#record">record (Record)</a>:
+        the unique record code; this will typically be the same as the
+        marine core code, dendrochronology code etc<br>
+      </li>
+      <li><a href="https://intchron.org/schema#country">country
+          (Country)</a>: country in which the record was taken - or null
+        if marine<br>
+      </li>
+      <li><a href="https://intchron.org/schema#site">site (Site)</a>:
+        the site name</li>
+      <li><a href="https://intchron.org/schema#latitude">latitude
+          (Latitude)</a>: the latitude for the record<br>
+      </li>
+      <li><a href="https://intchron.org/schema#longitude">longitude
+          (Longitude)</a>: the longitude for the record</li>
+      <li><a href="https://intchron.org/schema#site_type">site_type
+          (Site type)</a>: for IntCal normally Dendrochronogical,
+        Marine, Terrestrial or Speleothem<br>
+      </li>
+      <li><a href="https://intchron.org/schema#t_source">t_source
+          (Timescale)</a>: this is the ultimate source for the the
+        timescale - normally DendroNH, DendroSH, UTh or a specific
+        calibration curve<br>
+      </li>
+      <li><a href="https://intchron.org/schema#z_type">z_type (z&nbsp;
+          type)</a>: one of depth (cores), height (speleothems) or rings
+        (dendrochronological)<br>
+      </li>
+      <li><a href="https://intchron.org/schema#z_units">z_units
+          (z_units)</a>: either a unit of length (mm,cm,m) or rings; all
+        lengths are stored in m but presented and exchanged in the
+        format given<br>
+      </li>
+    </ul>
+    <p>Records can be created and edited as normal within IntChron but
+      for dendrochronogical records it is most convenient to create them
+      from the <a href="#Dendrochronological_data">dendrochronologial
+        data</a>&nbsp; which will provide much of the necessary detail.<br>
+    </p>
+    <h2><a name="Radiocarbon_datasets"></a>Radiocarbon datasets</h2>
+    <p>Radiocarbon datasets included in IntCal have a special format
+      within the IntChron package which is based around the needs of the
+      statistical procedures for curve production.&nbsp;&nbsp; They are
+      series stored within the record file. <br>
+    </p>
+    <p>The series should be of series_type "IntCal_Data" which, in
+      addition to the <a href="./help_IntChron.html#Data_series">standard
+
+
+        series headers</a> has the following:<br>
+    </p>
+    <ul>
+      <li><b>intcal_set_type (Type)</b>: This is "Int" for IntCal or
+        "SH" for SHCal etc<br>
+      </li>
+      <li><b>intcal_set (Set)</b>: This is the set number for data sets
+        included within IntCal/SHCal<br>
+      </li>
+      <li><b>intcal_division (Division)</b>: This is the set subdivision</li>
+    </ul>
+    <p>All of these can be null if the data set is only provisional or
+      being considered for inclusion.<br>
+    </p>
+    <p>This is followed by the data table, which has parameters which
+      can be broken down into several groups:<br>
+    </p>
+    <h3>Standard IntChron tool parameters</h3>
+    <p>These are used for plotting and other purposes within the
+      database and are common to other types of data series.&nbsp;
+      Details are given in the <a href="https://intchron.org/schema">IntChron
+
+
+
+
+        schema</a> but are also described here for convenience:<br>
+    </p>
+    <ul>
+      <li><b>z (Depth/Ring)</b>: general depth or ring measurement (see
+        <a href="#Rings">below</a>)<br>
+      </li>
+      <li><b>z_range</b><b> (z range)</b>:&nbsp; range in z (see <a
+          href="#Rings">below</a>)</li>
+      <li><b>t</b><b> (Date)</b>: general date parameter - the timescale
+        is defined at the record level; internally this is stored as
+        fractional astronomical years but can be displayed in a number
+        of different formats (calBP, fractional years, BC/AD etc)<br>
+      </li>
+      <li><b>t_sigma (±1&#963;)</b>: one sigma uncertainty in t</li>
+      <li><b>sample</b><b> (Sample)</b>: the sample name (see <a
+          href="#Sample">below</a>)</li>
+      <li><b>ring_segment</b><b> (Seg.)</b>: the segment of a ring
+        measured (EW, LW, EW/LW, EW1, EW2, LW1, LW2 etc.) </li>
+      <li><b>labcode (</b><b>Lab code)</b>: the radiocarbon lab code in
+        standard format</li>
+      <li><b>batch (</b><b>Batch)</b>: the measurement batch
+        (magzine/wheel) in which the measurements were made<br>
+      </li>
+      <li><b>r_date (R_Date)</b>: the uncalibrated radiocarbon date in <sup>14</sup>C
+        years BP<br>
+      </li>
+      <li><b>r_date_sigma (±1&#963;)</b>: the one sigma uncertainty in r_date</li>
+    </ul>
+    <h3>Special IntCal parameters</h3>
+    The following parameters are important for dataset preparation and
+    interpretation; these are:<br>
+    <ul>
+      <li><b>calage (CalAge)</b>: required for all data - this is the
+        age of the sample in years calBP;&nbsp; in normal circumstances
+        t will be 1950.5 - calage<br>
+      </li>
+      <li><b>calage_range (CalSpan)</b>: this is the range of the sample
+        material (see <a href="#Rings">below</a>); the default value is
+        1<br>
+      </li>
+      <li><b>calage_sigmaI</b><b> (±1&#963;)</b>: this is the one sigma
+        independent uncertainty in the age (0 for dendrochronologically
+        dated material)<br>
+      </li>
+      <li><b>calage_sigmaD</b><b> (±1&#963;)</b>: this is the one sigma
+        systematic uncertainty in the age of the entire dataset
+        (typically for tree ring series)<br>
+      </li>
+      <li><b>calage_sigmaC</b><b> (±1&#963;)</b>: correlated uncertainty
+        (used for example in the Cariaco Basin varved sediments)<br>
+      </li>
+      <li><b>intcal_reservoir</b><b> (Reservoir)</b>: the marine
+        reservoir offset (relative to the atmosphere) of this sample set<br>
+      </li>
+      <li><b>intcal_reservoir_sigma</b><b> (±1&#963;)</b>: the one sigma
+        uncertainty in intcal_reservoir_sigma<br>
+      </li>
+    </ul>
+    The following parameters are used internally in the IntCal curve
+    process and are typically not set on submission of data<br>
+    <ul>
+      <li><b>intcal_data_id (Id)</b>: the unique ID number for this data
+        point in IntCal<br>
+      </li>
+      <li><b>intcal_seq_no (Seq)</b>: the sequence number (for series
+        with multiple sequences)<br>
+      </li>
+      <li><b>r_date_sigma_extra (+ ±1&#963;)</b>: extra uncertainty in the
+        radiocarbon value<br>
+      </li>
+      <li><b>r_date_sigma_mult (× ±1&#963;)</b>: an error multiplier
+        (typically 1 as a default)<br>
+      </li>
+    </ul>
+    <br>
+    <h3><a name="Sample"></a>Sample naming conventions </h3>
+    <p>The <a href="https://intchron.org/schema#sample">sample (Sample)</a>
+      in the dataset is important.&nbsp; This should be different for
+      each sample which has a different age - but it should be identical
+      for the same sample measured by different labs.&nbsp; The labcode
+      should be different for every measurement and is a unique key in
+      the IntCal database.<br>
+      For dendrochronological samples the sample name should tie up with
+      the dendrochronological series name - suffixed with ring
+      information in the following way.&nbsp; Supposing the record name
+      is TOW, and the tree sequence name is TOW32A.&nbsp; The rings
+      within this sequence should be numbered from 1 (the oldest sample)
+      to the last ring.&nbsp; The radiocarbon sample names will then be
+      like TOW32A_r8 for measurement of a single ring 8 or TOW32A_r1-5
+      for measurements on a block from ring 1 to 5<br>
+    </p>
+    <h3><a name="Rings"></a>Ring numbers and depth information (z,
+      z_range, ring, calage_range)<br>
+    </h3>
+    <p>Most samples come with information either on depth (in a
+      sedimentary sequence, speleothem etc) or ring numbers.&nbsp; The
+      parameters z and z_range are used to store this information.&nbsp;
+      At the record level you can define what z is used for (depth,
+      height, rings etc), and this data can be imported/exported and
+      displayed in three different ways:<br>
+    </p>
+    <ul>
+      <li><b>z,z_range</b>: this is the internal format and is in two
+        columns; for the ring example above TOW32A_r1-5 would be 3 (the
+        central ring) and 4 (the range from 1 to 5).</li>
+      <li><b>z_from-z_to</b>: this is a single column format which is
+        either a single number (like 8 for TOW32A_r8) or a string with -
+        (like 1-5 for TOW32A_r1-5)</li>
+      <li><b>z ± dz</b>: this is another single column format which is
+        either a single number (like 8 for TOW32A_r8) or a string with ±
+        (like 1±2 for TOW32A_r1-5)</li>
+    </ul>
+    <p>In the case of tree rings this information is also given in the
+      two columns ring and cal_age_range.&nbsp; Normally ring and z will
+      be the same but cal_age_range should be 1 for single year rings
+      (like 1 for TOW32A_r8) and 1+z_range for higher numbers (like 5
+      for TOW32A_r1-5).&nbsp; Although this arrangement in some ways
+      duplicates information the cal_age_range is directly used in the
+      curve construction and can be checked against the z_range
+      information.&nbsp; In the case of non-dendro samples z_range is
+      not directly related to cal_age_range.<br>
+    </p>
+    <h2><a name="Dendrochronological_data"></a>Dendrochronological data</h2>
+    <p>The most important dendrochronolocal data is the ring-width
+      measurement series for the samples that have been analyzed for
+      radiocarbon.&nbsp; These should be included within the relevant
+      record for any new submissions but is not always available for
+      historical data.&nbsp; If the data is available either on the NOAA
+      ITRDB or as a Tuscon format rwl file, the easiest way to import
+      this information is to create the record using the tree ring data
+      because this includes much of the needed information in one place.<br>
+      Each dendrochronologial sequence has a unique code and ring
+      numbers (z) starting from 1 - these should correspond to the ring
+      numbers in the radiocarbon datasets.&nbsp; The whole series might
+      be floating (undated) in which case the t values will start from 1
+      for the oldest ring in the whole series.<br>
+      In addition to record-based dendrochronological series, it is also
+      possible to store master chronologies as 'Project data' - these
+      are relevant where the radiocarbon dated samples have been dated
+      against a main master chronology for which the details are not
+      provided in the IntCal dataset.<br>
+    </p>
+    <h2><a name="Publications"></a>Publications</h2>
+    <p>Details on the referencing system are given in the <a
+        href="./help_IntChron.html#Bibliography">main instructions for
+        the IntChron tool.</a><br>
+    </p>
+    <h2><a name="Preparing"></a>Preparing data for inclusion</h2>
+    <p>If you have data which you think might usefully be included in
+      future versions of IntCal you can prepare it for checking,
+      consideration and inclusion using the IntChron tool.&nbsp; The
+      steps are:<br>
+    </p>
+    <h3>Data preparation<br>
+    </h3>
+    <ul>
+      <li>Prepare you radiocarbon dataset with reference to the details
+        above using the spreadsheet at:</li>
+      <ul>
+        <li><a href="./import_IntCal.xlsx">import_IntCal.xlsx</a></li>
+      </ul>
+      <li>If the project is a dendrochronological one, there are several
+        approaches to prepare your dendrochronogical data. If working
+        with material from an established chronology the best solution
+        is to lodge the data with the ITRDB using the NOAA template:<a
+href="https://www.ncei.noaa.gov/pub/data/paleo/templates/noaa-wds-paleo-template-instructions.txt"><br>
+          &nbsp;&nbsp;&nbsp;
+https://www.ncei.noaa.gov/pub/data/paleo/templates/noaa-wds-paleo-template-instructions.txt</a>
+        <br>
+        This makes the next stages easier. If not, generating your data
+        in the Tucson .rwl or Heidelberg format will also work. Files
+        can be converted to these formats using the Tricycle dendro data
+        conversion tool: http://www.tridas.org/tricycle/. Please note
+        that file conversion can result in a loss of meta-data that must
+        them be added manually to the IntChron project.<br>
+      </li>
+    </ul>
+    <h3>Data compilation<br>
+    </h3>
+    <ul>
+      <li> Start a blank IntChron project using the IntCal format by
+        visiting: <br>
+      </li>
+      <ul>
+        <li><a
+href="https://intchron.org/tools/integrate/integrate.html?filename=Intcal_Project_Base.json"
+            target="_blank">https://intchron.org/tools/integrate/integrate.html?filename=Intcal_Project_Base.json</a></li>
+      </ul>
+      <li>Log in to IntChron as you will wish to save the project -
+        using [File &gt; Login] for this you can use an OxCal
+        username/password or register for a new username; this data will
+        not be seen by anyone but you and is for your own use.<br>
+      </li>
+      <li>Save the project using [File &gt; Save as] and giving it a
+        project name</li>
+      <li>If your project is a dendrochronological one you can create
+        the record by importing the dendrochronological data using [File
+        &gt; Import &gt; Dendro] and choosing your format; the ideal is
+        to use the ITRDB study number or doi as this includes the
+        relevant references and other metadata. If not import the file
+        and add this information manually, see the general <a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron#Bibliography">instructions
+
+
+          for entering references</a> in the IntChron Integration tool..</li>
+      <li>If your project is not dendrochronological create the record
+        by pressing the [+Record] on the Records/Sites window.&nbsp;
+        This will prompt you for a record name which should be unique
+        and is typically the core code or some other single word
+        identifier; Edit the record information by double clicking on
+        the Information&nbsp; tab or using the edit button at the top
+        left;&nbsp; fill in the record information as explained <a
+          href="#Record_information">above</a>.</li>
+      <li>Click on the [Data Series] tab and then on [Add to data
+        series] - give your series a unique identifier (single word)
+        which will create the data series.</li>
+      <li>Select the data series type to be "IntCal_Data" which will set
+        the correct parameters.</li>
+      <li>Press [Import/Export]</li>
+      <li>Next, for all data types check that the Options are set up to
+        be correct:</li>
+      <ul>
+        <li>For dendrochronological projects (using the spreadsheet) set
+          z units to "rings" and z style to "z,z_range"; critically set
+          the t units to the units you have used for t in your
+          spreadsheet (so calBP or AD etc);&nbsp; leave the header
+          option ticked</li>
+        <li>For other projects set the z units to whichever units you
+          have entered z in your spreadsheet - other settings as for the
+          dendrochronogical case</li>
+      </ul>
+      <li>Copy the data (including the header line) from the
+        import_IntCal.xlsx spreadsheet and paste it into the data
+        exchange window</li>
+      <li>Press [OK]</li>
+      <li>Check that the data looks ok</li>
+      <li>From the main project menu press [File &gt; Save]</li>
+    </ul>
+    <h3>Adding references</h3>
+    <p>Data will not normally be included in IntCal before it has been
+      published in a peer-reviewed journal. The reference information
+      which gives most of the details on the methodology and background
+      for the study should be included in the data submission.&nbsp;
+      References should be given for each radiocarbon data-set
+      submitted. This can be done by navigating the the relevant data
+      series within the record and adding to the references.&nbsp; See
+      the general <a href="./help_IntChron#Bibliography">instructions
+        for entering references</a> in the IntChron Integration
+      tool.&nbsp; References can also be entered for the record where
+      this is appropriate (particularly for dendrochronological series)
+      to give background information on the record.&nbsp; The
+      radiocarbon data-sets should have references entered specifically
+      for the radiocarbon aspects though even if this repeats records at
+      the record level.<br>
+      The most straight-forward way of entering publications is using
+      the doi and so where possible have this ready when preparing your
+      dataset.<br>
+    </p>
+    <h3>Checking your data</h3>
+    <p>All of the tools can be used to check that the data is
+      correct.&nbsp; In particular from the record you can use the
+      [Plot] function to plot the data series and see if this looks
+      correct.&nbsp; The timescales used for plotting can be set using
+      [Edit &gt; Time] from the top level menu.&nbsp; You can also check
+      the location information using the [Map] function.<br>
+    </p>
+    <h3>Sending your data</h3>
+    <p>You can share your project with other people, including members
+      of the IntCal committee by downloading the project as a JSON
+      file.&nbsp; To do this press [File &gt; Download] from the top
+      level menu - include all of the data normally.&nbsp; The JSON file
+      generated in this way can be stored locally and emailed to
+      colleagues.&nbsp; They can view the file by going to:<br>
+    </p>
+    <ul>
+      <li> Start a blank IntChron project using the IntCal format by
+        visiting: <br>
+      </li>
+      <ul>
+        <li><a
+            href="https://intchron.org/tools/integrate/integrate.html"
+            target="_blank">https://intchron.org/tools/integrate/integrate.html</a></li>
+      </ul>
+      <li>Pressing [File &gt; Upload] and uploading your project - this
+        can either be opened as a new project or merged into another
+        one. <br>
+      </li>
+    </ul>
+    <p>Further details on working with project files is given in the <a
+        href="./help_IntChron.html#Projects">main instructions for the
+        IntChron tool.</a><br>
+    </p>
+    <ul>
+    </ul>
+    <p><br>
+    </p>
+    <br>
+    <h2> </h2>
+  </body>
+</html>

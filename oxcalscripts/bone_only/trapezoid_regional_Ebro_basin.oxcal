@@ -1,0 +1,42 @@
+Plot(){
+  Options(){ MCMC_Iterations=100000; Convergence=95; };
+  Outlier_Model("",N(0,2),0,"s");
+  Sequence(){
+    Boundary("MidStart_Ebro_basin"){
+      Transition("Duration_Start_Ebro_basin");
+      Start("Onset_Ebro_basin");
+      End("Peak_Ebro_basin");
+    };
+    Phase("Ebro_basin"){
+      R_Date("CSIC-969",4750,30){Outlier(0.05);};
+      R_Date("GrA-6087",4490,50){Outlier(0.05);};
+      R_Date("MAMS-14327",4933,27){Outlier(0.05);};
+      R_Date("GrN-12124",4575,40){Outlier(0.05);};
+      R_Date("Beta-307796",4980,30){Outlier(0.05);};
+      R_Date("GrA-16931",4530,45){Outlier(0.05);};
+      R_Date("Beta-89986",4700,90){Outlier(0.05);};
+      R_Date("CSIC-1065",4270,60){Outlier(0.05);};
+      R_Date("CSIC-897",4900,100){Outlier(0.05);};
+      R_Date("UBAR-127",4950,70){Outlier(0.05);};
+      R_Date("UBAR-129",4860,90){Outlier(0.05);};
+      R_Date("GrA-15638",4940,60){Outlier(0.05);};
+      R_Date("Beta-301219",4520,30){Outlier(0.05);};
+      R_Date("Beta-317863",4360,30){Outlier(0.05);};
+      R_Date("N.R.Gr.3a",4580,90){Outlier(0.05);};
+      R_Date("Beta-299304",4390,30){Outlier(0.05);};
+      R_Date("CSIC-968",4700,25){Outlier(0.05);};
+      R_Date("I-10823",4445,95){Outlier(0.05);};
+      R_Date("GrA-13682",4370,40){Outlier(0.05);};
+      R_Date("I-15168",5190,140){Outlier(0.05);};
+      R_Date("GrA-13668",4070,40){Outlier(0.05);};
+      R_Date("GrA-16922",4505,45){Outlier(0.05);};
+      R_Date("Beta-339342[bis]",5380,40){Outlier(0.05);};
+      R_Date("N.R.2c",4225,65){Outlier(0.05);};
+    };
+    Boundary("MidEnd_Ebro_basin"){
+      Start("Decline_Ebro_basin");
+      Transition("Duration_End_Ebro_basin");
+      End("Disappear_Ebro_basin");
+    };
+  };
+};

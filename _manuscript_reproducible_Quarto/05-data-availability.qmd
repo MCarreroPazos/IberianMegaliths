@@ -1,0 +1,5 @@
+# Data availability
+
+This research was conducted with a view to reproducibility and replicability [@marwick2017] using OxCal [@bronkramsey1995] and the R statistical environment [@rcore2020], within RStudio Version 1.3.959, and making use of several specialist packages, namely *rcarbon* 1.4.1 [@crema2021] and *spatstat* [@baddeley2005], with some AI-based support for code development, particularly for polishing.
+
+The archaeological data and R scripts for reproducing all the analyses is publicly available in a Zenodo repository (link) and *Github* for collaborative work (link), under CC-BY4.0 (data) and the MIT license (R code). We also provide a fully reproducible Quarto manuscript that enables readers to regenerate all analyses, figures, and tables presented in this study.

@@ -1,0 +1,18 @@
+var s,o;
+o=new Array("","optional","alternate","required");
+spec=new itemSpec("data","BibTeX fields","Array");
+spec.appendChild("field","Field","Text",true);
+spec.appendChild("title","Title","Text",true);
+spec.appendChild("article","Article","Number").options=o;
+spec.appendChild("book","Book","Number").options=o;
+spec.appendChild("booklet","Booklet","Number").options=o;
+spec.appendChild("phdthesis","Doctoral thesis","Number").options=o;
+spec.appendChild("inbook","In book","Number").options=o;
+spec.appendChild("inproceedings","In proceedings","Number").options=o;
+spec.appendChild("incollection","In collection","Number").options=o;
+spec.appendChild("manual","Manual","Number").options=o;
+spec.appendChild("mastersthesis","Masters thesis","Number").options=o;
+spec.appendChild("misc","Miscellaneous","Number").options=o;
+spec.appendChild("proceedings","Proceedings","Number").options=o;
+spec.appendChild("techreport","Report","Number").options=o;
+spec.appendChild("unpublished","Unpublished","Number").options=o;

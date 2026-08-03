@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>Outliers</title>
+    <link rel="stylesheet" type="text/css" href="../style/db.css">
+    <link rel="stylesheet" type="text/css" href="../style/app.css">
+ <style>
+ <!--
+ body { background-color: rgb(240, 240, 240);padding:4px;box-shadow:1px 1px 4px rgba(0,0,0,0.3) inset }
+ div.progress { display: block;background-color: rgb(255,0,0);border-radius: 4px;
+	padding: -4px;overflow: hidden;width: 300px;height: 8px;box-shadow: inset 0px 0px 8px rgba(0,0,0,0.4)}
+ div.progressBar{display: block;position: relative;background-color: rgb(0,255,0);
+	left: 0%;width: 0%;top: -2px;height: 10px;box-shadow: inset 0px 0px 8px rgba(0,0,0,0.4)}
+ -->
+ </style>
+ <script type="text/javascript" src="ocp_utils.js"></script>
+ <script type="text/javascript">
+ <!--
+
+  var model=parent.oxcal.model;
+  var ocd=parent.oxcal.ocd;
+
+ function doSave(id,ext)
+ {
+  parent.oxcal.reportFilename=parent.oxcal.filename.replace(".oxcal","");
+  parent.app.fileSaveAs("OxCalReport",ext);
+ };
+
+  function graph(percent,line,width)
+  {
+   var left,right,linewidth=3;
+   document.write("<div class='progress'>");
+   document.write("<div class='progressBar' style='width:"+percent+"%'><\/div>");
+   document.write("<div class='progressBar' style='top:-10px;left:"+(line-0.5)+"%;width:1%;background-color:black'><\/div>");
+   document.write("<\/div>");
+  };
+  function addToCsv(item)
+  {
+   switch(typeof(item))
+   {
+   case "string":
+    parent.oxcal.reportContent+='"'+item+'"'+',';
+    break;
+   default:
+    parent.oxcal.reportContent+=item+',';
+    break;
+   };
+  };
+  function skipCsv()
+  {
+   parent.oxcal.reportContent+=',';
+  };
+  function endCsv()
+  {
+   parent.oxcal.reportContent+='\n';
+  };
+
+  function drawTable()
+  {
+   var i;
+   document.writeln("<table class='object'>");
+   document.writeln("<tr><th>Element<\/th>"
+   +"<th>Ok <div class='progress' style='display: inline-block;width:50px;background-color:rgb(0,255,0)'><\/div><\/th>"
+   +"<th>Outlier <div class='progress' style='display: inline-block;width:50px'><\/div><\/th>"
+   +"<th>Prior<\/th><th>Posterior<\/th><th>Model<\/th><th>Type<\/th><\/tr>");
+   parent.oxcal.reportContent='"Element","Prior","Posterior","Model","Type"\n';
+   for(i=0;i<model.proportional.length;i++)
+   {
+     if(model.proportional[i].outlier_possible||model.proportional[i].outlier_model)
+     {
+       document.write("<td>"+ocd[model.proportional[i].param[0]].name+"<\/td>");
+       addToCsv(ocd[model.proportional[i].param[0]].name);
+       document.write("<td colspan=2>");
+       graph(100*(1-model.proportional[i].outlier_post),
+         100*(1-model.proportional[i].outlier_prior),300);
+       document.write("<\/td>");
+       document.write("<td>"+toFixxed((100*model.proportional[i].outlier_prior),0)+"<\/td>");
+       addToCsv(100*model.proportional[i].outlier_prior);
+       document.write("<td>"+toFixxed((100*model.proportional[i].outlier_post),0)+"<\/td>");
+       addToCsv(100*model.proportional[i].outlier_post);
+       document.write("<td>"+ ocd[model.proportional[i].outlier_model].name+"<\/td>");
+       addToCsv(ocd[model.proportional[i].outlier_model].name);
+       document.write("<td>"+ model.proportional[i].outlier_type+"<\/td>");
+       addToCsv(model.proportional[i].outlier_type);
+       document.writeln("<\/tr>");
+       endCsv();
+     };
+   };
+   document.writeln("<\/table>");
+};
+  
+ //-->
+ </script>
+</head>
+<body>
+  <h3>Outlier Analysis</h3>
+  <hr/>
+<input type='button' onclick='doSave("data","csv")' value='Save'/>
+  <hr/>
+  
+    <script type="text/javascript">
+drawTable();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+Plot(){
+  Options(){ MCMC_Iterations=100000; Convergence=95; };
+  Outlier_Model("",N(0,2),0,"s");
+  Sequence(){
+    Boundary("MidStart_Ebro_basin"){
+      Transition("Duration_Start_Ebro_basin");
+      Start("Onset_Ebro_basin");
+      End("Peak_Ebro_basin");
+    };
+    Phase("Ebro_basin"){
+      R_Date("CSIC-969",4750,30){Outlier(0.05);};
+      R_Date("GrN-12124",4575,40){Outlier(0.05);};
+      R_Date("Beta-89989",4000,70){Outlier(0.05);};
+      R_Date("I-14593",4090,120){Outlier(0.05);};
+    };
+    Boundary("MidEnd_Ebro_basin"){
+      Start("Decline_Ebro_basin");
+      Transition("Duration_End_Ebro_basin");
+      End("Disappear_Ebro_basin");
+    };
+  };
+};

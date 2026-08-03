@@ -1,0 +1,71 @@
+# Renv files
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+
+# Keep renv core config
+!renv/activate.R
+!renv/settings.json
+!renv.lock
+
+# Temporary R files & cache
+.Rhistory
+.RData
+.RDataTmp
+.Rproj.user
+.Ruser
+*.Rproj
+*.Rout
+
+# Quarto / R Markdown / Knitr cache & render intermediates (global & subdirectories)
+.quarto/
+_freeze/
+_book/
+*_cache/
+*_files/
+*.quarto_ipynb
+**/.quarto/
+**/_freeze/
+**/*_cache/
+**/*_files/
+
+# Keep rendered manuscript HTML outputs
+!_manuscript_reproducible_Quarto/manuscript.html
+!manuscript/manuscript.html
+
+# Manuscript files
+manuscript/*.docx
+manuscript/*.tmp
+manuscript/~$*
+
+# Docker local environment files
+.env
+.env.local
+
+# System & OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.here
+
+# Editor & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules & Python cache
+node_modules/
+shiny_app/node_modules/
+__pycache__/
+*.pyc
+
+

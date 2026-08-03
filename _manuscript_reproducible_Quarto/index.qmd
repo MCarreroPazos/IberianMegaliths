@@ -1,0 +1,19 @@
+```{r setup}
+#| include: false
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = 'center',
+  out.width = '100%',
+  cache = TRUE
+)
+
+# Load required libraries
+library(here)
+library(knitr)
+
+# Set working directory for knitting
+here::i_am("_manuscript_reproducible_Quarto/index.qmd")
+```

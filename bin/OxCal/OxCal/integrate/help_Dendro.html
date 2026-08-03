@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IntCal Instructions</title>
+    <link rel="stylesheet" type="text/css" href="../style/OxCal.css">
+  </head>
+  <body>
+    <h1>Dendro tools</h1>
+    <p>Tools for the display and checking of dendrochronological data are included in this integration tool.<p>
+    <p>Most functions are available through the [Dendro] buttons shown when dendrochronological data is included in a project.</p>
+    <p>The plot functions are also designed to provide visualisations of dendrochronological data.<p>
+    <h2>Core scanning tool</h2>
+    <p>If images of dendrochronological cores have been included using the Dendro_Cores series type, these can be visualised and measured using the built in plotter.</p>
+    <p>The cores should be shown with the oldest rings to the left.</p>
+    <p>For each core scan the dimensions of the image need to be entered in mm in the Dendro_Cores table along with the sample name which will be used for any measurement series.</p>
+    <p>The core scans can be opened by clicking on their names or the document icon and you will then be presented with a core image with a green cursor.  Ideally use a device which has
+    the ability to scroll left and right as this will make navigation easier.</p>
+    <p>The sequence of operations are:</p>
+    <ul>
+    <li>Find the first ring boundary with the cursor either by scrolling (or by clicking and dragging).</li>
+    <li>Hold down [SHIFT] and scroll right/left to angle the cursor (or use [ALT] and drag left/right).</li>
+    <li>To mark the ring boundary hold down [SHIFT] and click on the point.</li>
+    <li>Repeat for the next ring boundary until you reach the end of the sample.</li>
+    <li>Ring numbers and widths (μm) are shown on the image.</li>
+    <li>If you make a mistake [SHIFT] and click to the left of the error and confirm you wish to clear the point(s).</li>
+    <li>When you have finished scroll beyond the end of the sample image and [SHIFT] click.  Confirm that you have finished measuring.</li>
+    <li>You will be prompted whether you wish to create (or update) the data series for this sample.</li>
+    </ul>
+    <p>If you return to this image you will see the recorded marks from your measurement.</p>
+    <p>The raw data for the measurement points is given in the Dendro_Cores table which you can see if you press the disclosure triangle next to the core.</p>
+    <p>If you edit the whole series you can copy/paste this data directly.  The four columns are:</p>
+    <ul>
+    <li>x: the x position of the cursor (mm)</li>
+    <li>y: the y position of the cursor (mm)</li>
+    <li>theta: the angle of the cursor from vertical (radians)</li>
+    <li>ring_width: the ring width from the previous point (mm)</li>
+    </ul>
+    <p>Ring widths are calculated through the mid-point between the cursors and perpendicular to the mean angle of the two cursor points.</p>
+  </body>
+</html>

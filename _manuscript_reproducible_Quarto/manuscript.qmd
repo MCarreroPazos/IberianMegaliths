@@ -1,0 +1,91 @@
+---
+title: "Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megalithic complex"
+author:
+  - name: "Miguel Carrero-Pazos"
+    affiliations:
+      - name: "University of Santiago de Compostela, GEPN-AAT / CISPAC, Spain"
+    email: miguel.carrero@usc.es
+  - name: "Andrew Bevan"
+    affiliations:
+      - name: "UCL Institute of Archaeology, United Kingdom"
+  - name: "Enrico R. Crema"
+    affiliations:
+      - name: "University of Cambridge, McDonald Institute for Archaeological Research, United Kingdom"
+  - name: "Carlos Rodríguez-Rellán"
+    affiliations:
+      - name: "University of Granada, Spain"
+  - name: "Mikel Díaz-Rodríguez"
+    affiliations:
+      - name: "University of Vigo, GEAAT / CISPAC, Spain"
+  - name: "María Martín Seijo"
+    affiliations:
+      - name: "Institute of Heritage Sciences, Incipit. Spanish National Research Council, CSIC, Spain"
+  - name: "Ramón Fábregas Valcarce"
+    affiliations:
+      - name: "University of Santiago de Compostela, GEPN-AAT / CISPAC, Spain"
+date: today
+abstract: |
+  Megalithic monuments refer to large, often mounded, structures made of both earth and worked stone slabs that were frequently used as collective burial places in prehistoric Europe. The Iberian Peninsula was an early centre for such monuments, boasting one of the largest concentrations of sites in Europe, with activity generally spanning 5000-2500 BCE. Debates since the 19th century have been centred on whether these monuments originated from a single source or emerged independently in different territories. This paper addresses this question using over 1,000 radiocarbon dates from 337 Iberian megalithic sites.
+
+  Our results indicate that material type bias, specifically charcoal over-representation, can distort the kinds of spatial origin models with radiocarbon that are now popular. Using a Bayesian trapezoidal model, we identify a polycentric model consistent with an initial "latent phase" of proto-megalithic experimentation, starting as early as ca. 5500 BCE. While southern and interior regions of Iberia exhibit a significant interval between initial emergence and peak constructive density, the North was characterized by a rapid and explosive adoption during the late 5th millennium BCE. We challenge current single-source diffusion models and demonstrate that spatial modelling of radiocarbon datasets requires rigorous chronometric filtering. Specifically, in regions where acidic soils prevent bone preservation, such as Northwestern Iberia, systematic dating programs integrating traditional radiocarbon with alternative methods like optically stimulated luminescence (OSL) are essential to obtain a high-resolution picture of early monumentality.
+keywords:
+  - funerary archaeology
+  - spatial analysis
+  - reproducible research
+  - Spain
+  - Portugal
+  - Neolithic
+  - Copper Age
+bibliography: references.bib
+csl: apa.csl
+nocite: |
+  @*
+crossref:
+  fig-prefix: ""
+  tbl-prefix: "Table"
+  chapters: false
+
+format:
+  html:
+    theme: cerulean
+    code-fold: true
+    code-summary: "Show code"
+    code-tools: true
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    fig-align: center
+    fig-width: 10
+    fig-height: 8
+    embed-resources: true
+    css: styles.css
+    
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+
+knitr:
+  opts_chunk:
+    fig.align: center
+    out.width: "100%"
+---
+
+{{< include index.qmd >}}
+
+{{< include 01-introduction.qmd >}}
+
+{{< include 02-materials-methods.qmd >}}
+
+{{< include 03-results.qmd >}}
+
+{{< include 04-discussion.qmd >}}
+
+{{< include 05-data-availability.qmd >}}
+
+{{< include 99-references.qmd >}}
+
+{{< include 100-post-references.qmd >}}

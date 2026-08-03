@@ -1,0 +1,22 @@
+Plot(){
+  Options(){ MCMC_Iterations=100000; Convergence=95; };
+  Outlier_Model("",N(0,2),0,"s");
+  Sequence(){
+    Boundary("MidStart_Duero_basins"){
+      Transition("Duration_Start_Duero_basins");
+      Start("Onset_Duero_basins");
+      End("Peak_Duero_basins");
+    };
+    Phase("Duero_basins"){
+      R_Date("GrA-18518",5170,60){Outlier(0.05);};
+      R_Date("GrN-17696",4870,60){Outlier(0.05);};
+      R_Date("GrN-23064",4590,60){Outlier(0.05);};
+      R_Date("Beta-228582",4210,50){Outlier(0.05);};
+    };
+    Boundary("MidEnd_Duero_basins"){
+      Start("Decline_Duero_basins");
+      Transition("Duration_End_Duero_basins");
+      End("Disappear_Duero_basins");
+    };
+  };
+};

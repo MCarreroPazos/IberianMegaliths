@@ -1,0 +1,90 @@
+/* Custom CSS for Quarto Manuscript */
+
+/* Main text justification */
+body {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Better spacing for paragraphs */
+p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* Figure captions */
+.figure {
+  margin: 2em 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Improved table styling */
+table {
+  margin: 1.5em auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Section headers */
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  color: #34495e;
+}
+
+/* Abstract styling */
+.unnumbered {
+  font-size: 1em;
+}
+
+/* References */
+#refs {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+#refs p {
+  margin-bottom: 0.5em;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  color: #555;
+}

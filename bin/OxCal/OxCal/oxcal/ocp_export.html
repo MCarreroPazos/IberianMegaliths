@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<script type="text/javascript" src="ocp_utils.js"></script>
+<script type="text/javascript" src="ocp_export.js"></script>
+<script type="text/javascript" src="ocp_utils.js"></script>
+<script type="text/javascript" src="Labels.js"></script>
+<script type="text/javascript" src="../jsobj/ObjectWriter.js"></script>
+<title>OxCal Data Export</title>
+	<link rel=stylesheet type=text/css href=../style/db.css>
+    <link rel="stylesheet" type="text/css" href="../style/app.css">
+</head>
+
+<body onload="initialise()">
+   <h3>OxCal Data Export</h3>
+   <hr/>
+<input type='button' onclick='doSave("data","csv")' value='Save'/>
+  <hr/>
+<br/><textarea id='data' rows=25 cols=80 class='compact'></textarea>
+</body>
+
+</html>

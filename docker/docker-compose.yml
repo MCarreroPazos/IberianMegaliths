@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Main service for analysis
+  r-analysis:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: iberian-megaliths:latest
+    container_name: iberian-megaliths-analysis
+    volumes:
+      # Mount data (read-only to protect originals)
+      - ./data:/home/rstudio/IberianMegaliths/data:ro
+      # Mount scripts (read/write for development)
+      - ./scripts:/home/rstudio/IberianMegaliths/scripts
+      # Mount figures directory (write for outputs)
+      - ./figures:/home/rstudio/IberianMegaliths/figures
+      # Mount ESM
+      - ./esm:/home/rstudio/IberianMegaliths/esm
+      # Mount Quarto manuscript
+      - ./_manuscript_reproducible_Quarto:/home/rstudio/IberianMegaliths/_manuscript_reproducible_Quarto
+    working_dir: /home/rstudio/IberianMegaliths
+    command: R --no-save
+    stdin_open: true
+    tty: true
+    environment:
+      - DOCKER_SCRIPTS=/home/rstudio/IberianMegaliths/docker
+
+  # RStudio Server service (optional, for interactive development)
+  rstudio:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: iberian-megaliths:latest
+    container_name: iberian-megaliths-rstudio
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./data:/home/rstudio/IberianMegaliths/data:ro
+      - ./scripts:/home/rstudio/IberianMegaliths/scripts
+      - ./figures:/home/rstudio/IberianMegaliths/figures
+      - ./esm:/home/rstudio/IberianMegaliths/esm
+      - ./manuscript:/home/rstudio/IberianMegaliths/manuscript
+      - ./_manuscript_reproducible_Quarto:/home/rstudio/IberianMegaliths/_manuscript_reproducible_Quarto
+    environment:
+      - DISABLE_AUTH=true
+      - ROOT=TRUE
+    working_dir: /home/rstudio/IberianMegaliths
+    command: /init
+

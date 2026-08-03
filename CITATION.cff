@@ -1,0 +1,112 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Material type bias affects radiocarbon-based diffusion models for
+  the origin and spread of Iberian megalithic complex
+message: >-
+  If you use this software or data, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Miguel
+    family-names: Carrero-Pazos
+    email: miguel.carrero@usc.es
+    affiliation: University of Santiago de Compostela, GEPN-AAT / CISPAC
+    orcid: 'https://orcid.org/0000-0001-9203-9954'
+repository-code: 'https://github.com/miguelcarrero/IberianMegaliths'
+url: 'https://github.com/miguelcarrero/IberianMegaliths'
+abstract: >-
+  This repository contains the R code and data for the paper
+  "Material type bias affects radiocarbon-based diffusion models for 
+  the origin and spread of Iberian megalithic complex".
+keywords:
+  - megaliths
+  - radiocarbon dating
+  - diffusion models
+  - spatial analysis
+  - Iberian Peninsula
+  - reproducible research
+license: MIT
+version: 1.0.0
+date-released: '2026-01-02'
+preferred-citation:
+  type: article
+  authors:
+  - given-names: Miguel
+    family-names: Carrero-Pazos
+    email: miguel.carrero@usc.es
+    affiliation: University of Santiago de Compostela, GEPN-AAT / CISPAC
+    orcid: 'https://orcid.org/0000-0001-9203-9954'
+  - given-names: Andrew
+    family-names: Bevan
+    affiliation: UCL Institute of Archaeology
+    orcid: 'https://orcid.org/0000-0001-7967-3117'
+  - given-names: Enrico R.
+    family-names: Crema
+    affiliation: University of Cambridge, McDonald Institute for Archaeological Research
+    orcid: 'https://orcid.org/0000-0001-6727-5138'
+  - given-names: Carlos
+    family-names: Rodríguez-Rellán
+    affiliation: University of Granada
+    orcid: 'https://orcid.org/0000-0001-5884-6592'
+  - given-names: Mikel
+    family-names: Díaz-Rodríguez
+    affiliation: University of Vigo, GEAAT / CISPAC
+    orcid: 'https://orcid.org/0000-0002-2703-1507'
+  - given-names: María
+    family-names: Martín Seijo
+    affiliation: Institute of Heritage Sciences, Incipit. Spanish National Research Council, CSIC, Spain
+    orcid: 'https://orcid.org/0000-0003-2924-7763'
+  - given-names: Ramón
+    family-names: Fábregas Valcarce
+    affiliation: University of Santiago de Compostela, GEPN-AAT / CISPAC
+    orcid: 'https://orcid.org/0000-0002-7940-6884'
+  title: >-
+    Material type bias affects radiocarbon-based diffusion models for
+    the origin and spread of Iberian megalithic complex
+  journal: '[Journal name]'
+  year: 2026
+  volume: XX
+  issue: XX
+  start: XX
+  end: XX
+  doi: '10.XXXX/XXXXX'
+references:
+  - type: software
+    title: 'R: A Language and Environment for Statistical Computing'
+    authors:
+      - name: 'R Core Team'
+    year: 2023
+    institution:
+      name: 'R Foundation for Statistical Computing'
+    url: 'https://www.R-project.org/'
+  - type: software
+    title: 'rcarbon: Calibration and Analysis of Radiocarbon Dates'
+    authors:
+      - family-names: Crema
+        given-names: Enrico R.
+      - family-names: Bevan
+        given-names: Andrew
+    year: 2021
+    url: 'https://CRAN.R-project.org/package=rcarbon'
+  - type: software
+    title: 'sf: Simple Features for R'
+    authors:
+      - family-names: Pebesma
+        given-names: Edzer
+    year: 2023
+    url: 'https://CRAN.R-project.org/package=sf'
+  - type: article
+    title: 'The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0–55 cal kBP)'
+    authors:
+      - family-names: Reimer
+        given-names: Paula J.
+    journal: 'Radiocarbon'
+    year: 2020
+    volume: 62
+    issue: 4
+    start: 725
+    end: 757
+    doi: '10.1017/RDC.2020.41'

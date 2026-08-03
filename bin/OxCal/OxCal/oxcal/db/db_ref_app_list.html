@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Reference list</title>
+  <link rel="stylesheet" type="text/css" href="../style/db.css">
+</head>
+<body style="width:100%;background-color:white;padding:4px">
+ <script type="text/javascript">
+ function displ()
+ {
+  var year;ind=parent.ref.ind;
+  if(parent.ref.list.length==0){return;};
+  if(ind=='year')
+  {
+   year=parent.ref.list[0].year;
+   document.write("<h3>"+year+"<\/h3>");
+  };
+  document.write("<ul>");
+  var i;
+  for(i=0;i<parent.ref.list.length;i++)
+  {
+   if((ind=='year') && (year!=parent.ref.list[i].year))
+   {
+    year=parent.ref.list[i].year;
+    document.write("<\/ul><h3>"+year+"<\/h3><ul>");
+   };
+   document.write("<li id='"+parent.ref.list[i].ref+"'>");
+   document.write(parent.ref.reference(parent.ref.list[i],true));
+   document.write("<\/li>");
+  };
+  document.write("<\/ul>");
+ };
+ displ();
+ </script>
+</body>
+</html>

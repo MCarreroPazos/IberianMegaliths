@@ -1,0 +1,41 @@
+Plot(){
+  Options(){ MCMC_Iterations=100000; Convergence=95; };
+  Outlier_Model("",N(0,2),0,"s");
+  Sequence(){
+    Boundary("MidStart_Tagus_basins"){
+      Transition("Duration_Start_Tagus_basins");
+      Start("Onset_Tagus_basins");
+      End("Peak_Tagus_basins");
+    };
+    Phase("Tagus_basins"){
+      R_Date("Beta-196091",4650,40){Outlier(0.05);};
+      R_Date("Sac-1559",4640,90){Outlier(0.05);};
+      R_Date("Ly-4578",5750,130){Outlier(0.05);};
+      R_Date("OxA-5509",4410,75){Outlier(0.05);};
+      R_Date("Beta-239754",4110,40){Outlier(0.05);};
+      R_Date("Wk-17091",4182,39){Outlier(0.05);};
+      R_Date("Sac-1613",4700,80){Outlier(0.05);};
+      R_Date("Beta-228580",4180,40){Outlier(0.05);};
+      R_Date("Beta-229584",4410,40){Outlier(0.05);};
+      R_Date("Beta-196094",4780,40){Outlier(0.05);};
+      R_Date("Beta-208518",4270,40){Outlier(0.05);};
+      R_Date("Beta-228577",4770,40){Outlier(0.05);};
+      R_Date("Beta-225168",4150,40){Outlier(0.05);};
+      R_Date("Beta-234134",4280,40){Outlier(0.05);};
+      R_Date("Beta-208950",4180,50){Outlier(0.05);};
+      R_Date("Sac-1556",4250,90){Outlier(0.05);};
+      R_Date("Beta-225171",4050,40){Outlier(0.05);};
+      R_Date("Beta-205946",4590,40){Outlier(0.05);};
+      R_Date("Beta-190001",4520,40){Outlier(0.05);};
+      R_Date("Beta-190004",4290,40){Outlier(0.05);};
+      R_Date("OxA-5446",3995,65){Outlier(0.05);};
+      R_Date("Beta-239755",4340,40){Outlier(0.05);};
+      R_Date("Beta-228583",4450,40){Outlier(0.05);};
+    };
+    Boundary("MidEnd_Tagus_basins"){
+      Start("Decline_Tagus_basins");
+      Transition("Duration_End_Tagus_basins");
+      End("Disappear_Tagus_basins");
+    };
+  };
+};

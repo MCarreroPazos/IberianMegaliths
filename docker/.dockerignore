@@ -1,0 +1,34 @@
+# Archivos a ignorar al construir la imagen Docker
+
+# Directorios de salida
+figures/*
+!figures/.gitkeep
+
+# Archivos temporales de R
+.Rhistory
+.RData
+.Rproj.user
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Documentación de desarrollo
+*.md
+!README.md
+
+# Archivos grandes innecesarios
+*.pdf
+*.html

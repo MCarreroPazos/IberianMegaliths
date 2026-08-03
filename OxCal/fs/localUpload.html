@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+   function localUpload(event)
+   {
+    var input = event.target;
+    var fo,ext,name;
+    var reader = new FileReader();
+    fo=document.getElementById("filename").files.item(0);
+    ext=parent.checkName(fo.name.slice(fo.name.indexOf(".")+1));
+    name=parent.checkName(fo.name.slice(0,fo.name.indexOf(".")));
+    reader.onload = function()
+    {
+     var dataURL = reader.result;
+     if(!parent){return;};
+     parent.localFileUpload(parent.path+name+"."+ext,dataURL,function(txt){parent.refresh();});
+    };
+    reader.readAsDataURL(input.files[0]);
+   };
+  </script>
+ </head>
+ <body>
+  <div style="text-align:center;position:absolute;width:100%;top:50%;left:0px">
+   Drop file here
+  </div>
+  <div style=""
+  <input id="fileBrowser" type='file' accept='application/json' onchange='openFile(event)' style="width:100%;height:80%;top:20%;left:0px;background-color:rgba(0,0,0,0.2);position:absolute"/><br/>
+  </div>
+  <form name="upload" id="upload" method="POST" action="filelist.html" enctype="multipart/form-data" accept-charset="utf-8">
+   <input type="hidden" name="MAX_FILE_SIZE" value="20000000"/>
+   <input type="hidden"  id="path" name="path" size="20" value=""/>
+   <br/>
+   <input id="filename" type="file" name="upload" 
+   style="width:100%;height:100%;top:0px;left:0px;background-color:rgba(0,0,0,0.2);position:absolute" onchange="localUpload(event)"/>
+   <input type="hidden" id="action" name="action" size="20" value="Upload"/>
+  </form>
+ </body>
+</html>

@@ -1,0 +1,31 @@
+# Acknowledgments
+
+The authors are grateful to Antón A. Rodríguez Casal for some of the photographs of the Figure 1 and to Enrique Cerrillo for its insightful comments on a previous version of this manuscript. The lead author's contribution to this research was in part supported by a Marie Sklodowska-Curie grant (reference 886793) hosted at the UCL Institute of Archaeology, and by the projects "Detección automática de monumentos tumulares e megalíticos mediante tecnoloxía LiDAR e Intelixencia Artificial (DISCOVER)" (USC 2025-PU014, PI: Miguel Carrero Pazos), "Paisajes Megalíticos: Explorando los factores humanos y ambientales de las sociedades neolíticas en el noroeste de la Península Ibérica (V-II milenio a.C.) (MegaLands)", PID2024-156264NA-I00 funded by MICIU/AEI/10.13039/501100011033/ FEDER, UE (PI: Miguel Carrero Pazos, Noemí Silva Sánchez).
+
+# Author information
+
+Miguel Carrero-Pazos. University of Santiago de Compostela, GEPN-AAT / CISPAC, Spain
+
+Andrew Bevan. University College London, Institute of Archaeology, United Kingdom
+
+Enrico R. Crema. University of Cambridge, McDonald Institute for Archaeological Research, United Kingdom
+
+Carlos Rodríguez-Rellán. University of Granada, Spain
+
+Mikel Díaz-Rodríguez. University of Vigo, GEAAT / CISPAC, Spain
+
+María Martín Seijo. Institute of Heritage Sciences, Incipit. Spanish National Research Council, CSIC, Spain
+
+Ramón Fábregas Valcarce. University of Santiago de Compostela, GEPN-AAT / CISPAC, Spain
+
+# Author contributions
+
+MCP designed and initiated the study with input from AB and ERC. MCP and MDR collected the radiocarbon data. MCP, CRR and RFV reviewed and corrected the database. MCP carried out the analysis, with input from AB and ERC. MMS provided wood species data for the Northwestern megaliths. MCP wrote the first draft and organised the supplementary information. MCP, AB, ERC, CRR, MDR, MMS and RFV reviewed the final manuscript.
+
+# Competing interests
+
+The authors declare no competing interests.
+
+# Materials & Correspondence
+
+The corresponding author is Miguel Carrero-Pazos (<miguel.carrero@usc.es>)

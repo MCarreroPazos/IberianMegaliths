@@ -1,0 +1,41 @@
+project:
+  type: default
+  output-dir: .
+  render:
+    - manuscript.qmd
+
+bibliography: references.bib
+csl: apa.csl
+
+crossref:
+  fig-prefix: ""
+  tbl-prefix: "Table"
+  chapters: false
+
+format:
+  html:
+    theme: cerulean
+    code-fold: true
+    code-summary: "Show code"
+    code-tools: true
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    fig-align: center
+    fig-width: 10
+    fig-height: 8
+    embed-resources: true
+    css: styles.css
+    
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+
+knitr:
+  opts_chunk:
+    fig.align: center
+    out.width: "100%"

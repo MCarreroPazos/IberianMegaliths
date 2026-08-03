@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <title>IntChron Instructions</title>
+    <link rel="stylesheet" type="text/css" href="../style/db.css">
+    <style type='text/css'>
+     body         { padding:8px;font-size: 10pt; font-family: "Helvetica Neue", helvetica, arial, sans-serif;color:#000000;background-color:white }
+    </style>
+  </head>
+  <body>
+    <h1>IntChron integration tool</h1>
+    <p>The IntChron integration tool is intended to be used for the
+      viewing, management and analysis of structured chronological
+      information.&nbsp; <br>
+    </p>
+    <ul>
+      <li><a href="#Data_model">Data model</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Records">Records</a></li>
+      <ul>
+        <li><a href="#Data_series">Data series</a><br>
+        </li>
+      </ul>
+      <li><a href="#Project_data_series">Project data series</a></li>
+      <li><a href="#Bibliography">Bibliography</a></li>
+      <li><a href="#Parameters">Parameters</a></li>
+      <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Options">Options</a></li>
+    </ul>
+    See also sections on:<br>
+    <ul>
+      <li><a href="#Windowing_system">Wndowing system</a></li>
+      <li><a href="#Data_display_options">Data display options</a><br>
+      </li>
+      <li><a href="#Searching">Searching</a><br>
+      </li>
+    </ul>
+    <h2><a name="Data_model"></a>Data model</h2>
+    <p>The tool is purely web-based and most operations are performed in
+      the clients browser rather than on the server.&nbsp; The only
+      exceptions are file storage and radiocarbon calibration/analysis
+      using OxCal. <br>
+    </p>
+    <p> Each instance of the tool works on a single IntChron project,
+      but can also be used to merge data from different projects if
+      required.&nbsp; The information is stored in JSON format as
+      described in the <a href="https://intchron.org/schema">schema</a>
+      and is based on a linked data model.&nbsp; Data can be stored:</p>
+    <ul>
+      <li>as local JSON files (which can be uploaded and downloaded)</li>
+      <li>as files stored on the IntChron server (also the OxCal server)<br>
+      </li>
+      <li>on websites and accessed as url</li>
+      <li>dynamically served from web-based databases</li>
+    </ul>
+    <p>If you wish to store data on the IntChron server or access
+      databases available through IntChron you need to log in to the
+      system.&nbsp; This can be done using [File &gt; Login] and the
+      [File] menu also has options for new users and forgotten
+      passwords.&nbsp; The usernames and passwords are shared with
+      OxCal.<br>
+    </p>
+    <h2><a name="Projects"></a>Projects</h2>
+    <h3>Overall organization</h3>
+    <p>See the <a href="https://intchron.org/schema#Project">project
+        schema</a> for details of the file format.&nbsp; A project holds
+      information on:<br>
+    </p>
+    <ul>
+      <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Records">Records</a>:normally
+
+        geographically located sites/records for which information is
+        held<br>
+      </li>
+      <ul>
+        <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Data_series">Data
+
+
+            series</a>:these are stored within the record structure<br>
+        </li>
+      </ul>
+      <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Project_data_series">Project
+
+
+          data series</a>:these are data series not directly associated
+        with records<br>
+      </li>
+      <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Bibliography">Bibliography</a>:this
+
+        is a compilation of all the references for the project<br>
+      </li>
+      <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Parameters">Parameters</a>:these
+
+        specify parameters not given in the <a
+          href="https://intchron.org/schema">schema</a> relevant to the
+        project - or sets extra details on how standard parameters are
+        displayed</li>
+      <li><a
+href="file:///Users/cramsey/Sites/www/integrate/help_IntChron.html#Options">Options</a>:these
+
+        are global options which affect the way information is displayed
+        and interpreted</li>
+    </ul>
+    <h3>Working with project files</h3>
+    <p>To create a new project use [File &gt; New] this will create a
+      new unnamed project which you can work on and to which you can
+      import information.<br>
+    </p>
+    <p>To save the project you can either save it on the IntChron server
+      using [File &gt; Save as]&nbsp; (which will require you to log on)
+      or you can download it using [File &gt; Download] which will allow
+      you to save the whole project or parts of in.&nbsp; If you are
+      saving on the server you will be asked for a project name which
+      will be used to create a new directory.&nbsp; This needs to be a
+      new name - if you are not sure what already exists use [File &gt;
+      Open] to view your home directory.&nbsp;&nbsp; If you download the
+      project you can select only parts of it to download which enables
+      projects to be split.<br>
+    </p>
+    <p>Projects stored on the server are within a folder (directory)
+      with the project name and are called "index.json".&nbsp; If you
+      wish to open a project stored on the server do [File &gt; Open]
+      navigate to the directory and select the "index.json" file.&nbsp;
+      It is also possible to have projects as single JSON files which
+      have been uploaded - they are opened in the same way.<br>
+    </p>
+    <p>If you wish to open a project which you have as a file you can
+      use [File &gt; Upload] this will give you a dialog to upload the
+      project file - and can either be used to open the file as a new
+      project or to merge the data into an existing one.&nbsp; This
+      enables projects to be combined. <br>
+    </p>
+    <h2><a name="Records"></a>Records</h2>
+    <p>See the <a href="https://intchron.org/schema#Record">record
+        schema</a> for details of the file format.&nbsp; Records contain
+      much of the information in many projects and they are intended to
+      be used for specific geographical locations/sites.&nbsp; To view
+      the records use [View &gt; Records/Sites].&nbsp; This shows the
+      list of records.<br>
+    </p>
+    <p>To create a new record manually press the [+ Record] button and
+      you will be asked for the record name.&nbsp; This should be a
+      single word - typically the core code or a brief form of the site
+      name. Spaces in the record name will be replaced by underscores to
+      ensure these are single words.<br>
+    </p>
+    <p>The record has three tabs:<br>
+    </p>
+    <ul>
+      <li>Information - this holds the main information about the record<br>
+      </li>
+      <li>Data series - this holds specific data content<br>
+      </li>
+      <li>References - this is a list of references relevant to the
+        record as a whole<br>
+      </li>
+    </ul>
+    <p>To edit the record double click on the tabs or click on the edit
+      icon &#8856;.&nbsp; This enables you to enter location information and
+      other information about the site.&nbsp; There is a location dialog
+      for much of this information which enables conversion of location
+      information from other formats&nbsp; such as UTM, IARU or NGR
+      within the UK into longitude and latitude which is what is used in
+      IntChron.&nbsp; This is where you can enter information about the
+      site and region.<br>
+    </p>
+    <p>There are also some key record parameters which are used by tools
+      within IntChron which should be set:</p>
+    <ul>
+      <li><a href="https://intchron.org/schema#z_type">z_type (z&nbsp;
+          type)</a>: one of depth (cores), height (speleothems), layers
+        (ice/varves) or rings (dendrochronological) or rarely time.</li>
+      <li><a href="https://intchron.org/schema#z_type">z_basis (z&nbsp;
+          basis)</a>: which can be original, composite or event-free
+        (optional)<br>
+      </li>
+      <li><a href="https://intchron.org/schema#z_units">z_units
+          (z_units)</a>: either a unit of length (mm,cm,m) or rings; all
+        lengths are stored in m but presented and exchanged in the
+        format given</li>
+      <li><a href="https://intchron.org/schema#t_source">t_source
+          (Timescale)</a>: this is the ultimate source for the the
+        timescale<br>
+      </li>
+      <li><a href="https://intchron.org/schema#suppress_t">suppress_t
+          (Suppress t)</a>: this is used when plotting data to prevent
+        plots against time (optional)<br>
+      </li>
+      <li><a href="https://intchron.org/schema#suppress_t">suppress_z
+          (Suppress z)</a>: this is used when plotting data to prevent
+        plots against depth (optional)<br>
+      </li>
+    </ul>
+    <p>It is also useful in many cases to give information about the
+      environment and the elevation but this will depend on the
+      application.&nbsp; There is space also for general text notes but
+      these should be kept brief normally - if extensive documentation
+      is required this would be better stored in files under data
+      series.<br>
+    </p>
+    <p>The data series tab is where most of the data is normally stored
+      see <a href="#Data_series">below</a>.<br>
+    </p>
+    <p>To add references for the record click on the References tab -
+      make sure you are in edit mode and click on [New
+      Reference].&nbsp;&nbsp; See details on reference entry <a
+        href="#Bibliography">below</a>.<br>
+    </p>
+    <p>If you wish to add a lot of records in a single operation or wish
+      to modify parameters of records in bulk you can use the
+      [Import/Export] button on the Records/Sites window.&nbsp; This
+      will give you a window in which you can enter the data (with the
+      correct headers) from a spreadsheet.&nbsp;&nbsp; This will
+      however, bypass the checks on values in the normal process so do
+      check the results.<br>
+    </p>
+    <p>When you have records with location information you can use the
+      [Map] button in the individual records window to show the location
+      of the record or the [Map] button in the top menu to show all your
+      records on a map.&nbsp; When plotting multiple records the map is
+      linked so you can pull up a specific record's data by clicking on
+      the location within the map.<br>
+    </p>
+    <p>Each record has a color associated with it which can be set
+      manually.&nbsp; From the Records/Sites window you can also color
+      all the records on a number of different criteria.<br>
+    </p>
+    <h2><a name="Data_series"></a>Data series</h2>
+    <p>See the <a href="https://intchron.org/schema#data">data schema</a>
+      for details of the file format.&nbsp; Data series can be entered
+      for a record using the "Data Series" tab.&nbsp; To add an
+      additional series you go into edit mode and then press [Add to
+      Data Series] which will prompt for a new series name.&nbsp; Each
+      data series should have a unique name (within that record).<br>
+    </p>
+    <p>The data content of each series is dependent on the type so the
+      first thing is to select the type of series which will set up the
+      entries to be included.&nbsp; Most series headers include some
+      common elements:<br>
+    </p>
+    <ul>
+      <li><a href="https://intchron.org/schema#series_type">series_type
+          (Series type)</a>: this is the type of the data series</li>
+      <li><a href="https://intchron.org/schema#series">series (Series)</a>:
+        this is the unique name of the series</li>
+      <li><a href="https://intchron.org/schema#header_list">header_list
+          (Headers)</a>: this can be used to add additional header items
+        if not already included</li>
+      <li><a href="https://intchron.org/schema#parameter_list">parameter_list
+
+          (Parameters)</a>: this can be used to add/remove columns for
+        the data table</li>
+      <li><a href="https://intchron.org/schema#refs">refs (References)</a>:
+        a list of references relevant to the data series</li>
+      <li><a href="https://intchron.org/schema#data">data (Data)</a>:
+        the actual data table<br>
+      </li>
+    </ul>
+    <p>Unless the data is being imported in some other way the easiest
+      way to import/export data is using the [Import/Export] button
+      which enables you to copy/paste the data between a spreadsheet and
+      the application with a number of formatting options.<br>
+    </p>
+    <p>The header_list and parameter_list both work in the same
+      way.&nbsp; They are a list of parameter names with comma
+      separation.&nbsp; If rather than add a parameter you with to
+      remove one you can start the name with a tilde - so for a data set
+      which normally has the parameter material you can put ~material in
+      the parameter_list to remove that column.<br>
+    </p>
+    <p>Changes to the data series are shown in the record.&nbsp; If you
+      wish to save the changes you need to save the record or the
+      project.<br>
+    </p>
+    <p>Note that the <a href="https://intchron.org/schema#sample">sample
+
+        (Sample)</a> parameter is particularly important as it enables
+      the same sample to be identified in different data series and a
+      well designed naming convention should be used.<br>
+    </p>
+    <h2><a name="Project_data_series"></a>Project data series</h2>
+    <p>See the <a href="https://intchron.org/schema#Series">series
+        schema</a> for details of the file format.&nbsp; These are
+      essentially the same as data series within records but they exist
+      at the project level.&nbsp; These series can be shown by using
+      [View &gt; Project data].&nbsp; Editing is similar as for records
+      and data series.&nbsp; The main difference is that project series
+      can be stored as independent files (as can records) in the linked
+      data model.<br>
+    </p>
+    <h2><a name="Bibliography"></a>Bibliography</h2>
+    <p>For any data set the associate references are very important as
+      are the linkages between the data and the associate
+      references.&nbsp; This tool includes elements to keep track of
+      references.&nbsp; The references are stored at project level in a
+      bibliography the format of which is given in the <a
+        href="https://intchron.org/schema#bibliography">bibilography
+        schema</a>.&nbsp; This is essentially based on the BibTeX system
+      and references from an IntChron project can be conveniently
+      exported to and imported from BibTeX.<br>
+    </p>
+    <p>To see the bibliography use [View &gt; Bibliography]. This gives
+      a list of citations with a check list of those with URL and DOI
+      data.&nbsp; If you hover your mouse over a citation you will see
+      the full reference. The list is hyperlinked (where possible) to
+      the original reference resource. If you want a simple list to view
+      use the [Display] button on the bibliography which will output a
+      full text formatted list of the references with links provided.<br>
+    </p>
+    <p>In the normal citation view there is a search icon on the
+      right.&nbsp; Pressing this will pull up a list of data resources
+      within the project relevant to this reference.<br>
+    </p>
+    <p>Within the bibliography using [Import/Export] enable you to
+      import/export references either in BibTeX format (for all
+      references) or as a simple list of DOIs (where available).&nbsp;
+      This enables whole bibliographies to be added simply.&nbsp; The
+      bibliographic tool uses the CrossRef API and so can get full
+      details from DOIs as long as they are within the CrossRef
+      database.<br>
+    </p>
+    <p>In addition to the project bibliography,&nbsp;&nbsp; The
+      references are listed in individual records and data series.&nbsp;
+      To add a reference in any of these places go into edit mode and
+      press the [New Reference] link.&nbsp; This will pull up the
+      bibliography tool.&nbsp; There are several methods of data entry:<br>
+    </p>
+    <ul>
+      <li>If the publications are already in the project - simply select
+        those you wish to include from the list of citations</li>
+      <li>If the publication is not already included then press [Search]
+        (this will be automatic if the bibliography is empty)</li>
+      <ul>
+        <li>In the "Search for" box enter the doi if you know it - this
+          will be simplest</li>
+        <li>If you have some elements of the title or authors and the
+          year - enter these in "Search for" and "Year filter" dialogs<br>
+        </li>
+        <li>If you have a full text version of the reference enter that
+          in the "Search for" box<br>
+        </li>
+        <li>Press [Search] again and see what is found - if what you are
+          looking for is there select it in the same way and press [Ok]</li>
+      </ul>
+      <li>If the search does not give what you want - or you know it is
+        unlikely to be available online press [New]</li>
+      <li>Enter the first author's surname, the year and the title and
+        the select the type</li>
+      <li>Fill in the details by hand using BibTeX conventions and check
+        the full reference at the bottom for any issues then press [Ok]<br>
+      </li>
+    </ul>
+    <p>For many people it may be easier rather than entering
+      publications by hand to export them in BibTeX format from
+      elsewhere and then import them into the bibliography.<br>
+    </p>
+    <p>Reference details (if you are logged in) are stored in a central
+      IntChron database of references which should speed up some
+      processes rather than relying always on CrossRef.<br>
+    </p>
+    <p>The is a project level option accessible under [Edit &gt;
+      Bibliography &gt; Clean] which will delete references in the
+      bibliography but not in the project.&nbsp; This will take effect
+      when the project is next saved.<br>
+    </p>
+    <h2><a name="Parameters"></a>Parameters</h2>
+    <p>Some parameters that you may wish to using in a project are not
+      defined within the&nbsp;<a href="https://intchron.org/schema">IntChron
+
+        schema</a> and in this case, ideally you should define them in
+      the parameters section of the project.&nbsp; The parameters can be
+      viewed using [View &gt; Parameters].&nbsp; This also allows you to
+      define how new (or existing) parameters are displayed and
+      plotted.&nbsp; It also allows you to set optional values.&nbsp; So
+      for example if you wish all your records to only have a
+      ore-defined list of environment values this can be set there.<br>
+    </p>
+    <p>The details of the settings are given in the <a
+        href="https://intchron.org/schema#Project">project schema</a>. </p>
+    <h2> </h2>
+    <h2><a name="Options"></a>Options</h2>
+    <p>In addition to data which is relevant to the dataset the project
+      stores a few global level options and these can be seen using
+      [View &gt; Options]&nbsp; this gives:<br>
+    </p>
+    <ul>
+      <li>name (Name): the name of the project</li>
+      <li>t_units (Time units): the format for time used in the project</li>
+      <li>t_from (From): the start date of the project (used for
+        plotting and data retrieval purposes)</li>
+      <li>t_to (To): the end date of the project</li>
+      <li>t_autorange (Auto): whether t_from and t_to are set
+        automatically or fixed</li>
+      <li>z_units (z units): the default for z units where not set at
+        record level</li>
+      <li>z_style (z style): the same for the format in when z and
+        z_range are shown</li>
+      <li>reversex (Reverse x axis): whether x axes are reversed <br>
+      </li>
+      <li>reversey (Reverse y axis): whether y axes are reversed</li>
+      <li>ondemand (Load on demand): if set will only load linked data
+        when requested rather than on opening</li>
+      <li>record_parameters (Record parameters): allows you to add extra
+        meta-data parameters for records<br>
+      </li>
+      <li>series (Series options): an array of special settings for
+        series</li>
+    </ul>
+    <p>Many of these options are simply saved versions of changes made
+      in other ways.&nbsp; The reversex option can be used if you prefer
+      to plot time from young to old (left to right).<br>
+    </p>
+    <p>The series (Series options) allow you to set additional default
+      pararmeters and headings for data series at the project level -
+      this saves having to do it specifically within each data series.<br>
+    </p>
+    <h2><a name="Windowing_system"></a>Windowing system</h2>
+    <p>The tool is based on a windowing system and a generic tool for
+      data manipulation.&nbsp; Windows can generally be opened using the
+      [View] menu or by following links within the data.</p>      
+      <div>Each
+      window can be closed using the <div class="objIcon" style="display:inline-block"><div class="circleRed"></div><div class="cross"></div></div>  button, minimized using the <div class="objIcon" style="display:inline-block"><div class="circleOrange"></div><div class="minus"></div></div>
+      button or maximized using the <div class="objIcon" style="display:inline-block"><div class="circleGreen"></div><div class="plus"></div></div> button.&nbsp; There is a footer
+      bar which shows open windows and can be used to switch between
+      windows if they are minimized or not visible.</div>
+    </p>
+    <p>Windows can be moved by clicking and dragging on the top
+      bar.&nbsp; They can be resized by clicking and dragging the bottom
+      right corner.<br>
+    </p>
+    <div>Data objects can be edited either by double clicking on them or
+      by using the edit <div class="objIcon" style="display:inline-block"><div class="circleCyan"></div><div class="pencil"></div></div> button which toggles between edit and read mode.</div>
+      
+    <h2><a name="Data_display_options"></a>Data display options</h2>
+    <p>The way data is displayed can be set most easily through the Edit
+      menu.&nbsp; [Edit &gt; Time] allows you to set the preferred
+      format for dates (essentially all parameters like t, t_from, t_to
+      etc).&nbsp; [Edit &gt; Depth/Height] allows you to specify which
+      units are used for z parameters.&nbsp; This is used in tables and
+      in plots.&nbsp; Note that internally all t-type parameters are
+      stored in fractional astronomical years and all z parameters in m
+      (except for layers and rings which are dimensionless).&nbsp; This
+      is to ensure that data does not require knowledge of the options
+      set for interpretation.<br>
+    </p>
+    <h2><a name="Searching"></a>Searching<br>
+    </h2>
+    <p>There are various ways of searching for data within the IntChron
+      tool.&nbsp; Note that all searches are done within the data held
+      in the browser and do not involve calls the the data source.<br>
+    </p>
+    <p>There are four main search modes which can be found through [Edit
+      &gt; Search] and these are:<br>
+    </p>
+    <ul>
+      <li>Data: this is for individual data entries within data series
+        (at the record or project level)<br>
+      </li>
+      <li>Records: this is for records themselves<br>
+      </li>
+      <li>Samples: this enables all the data on particular samples to be
+        aggregated - and where appropriate averaged; this is based on
+        the <a href="https://intchron.org/schema#sample">sample
+          (Sample)</a> parameter which needs to be consistent between
+        datasets<br>
+      </li>
+      <li>Series: this is used for finding data series</li>
+    </ul>
+    <p>The results of the searches are hyperlinked and so if you search
+      for records for example you can then link to their associated
+      data.&nbsp; All of the search tools allow you to set which
+      parameters are returned, the query used to filter the search and
+      to order the results in relation to particular parameters.&nbsp;
+      You can choose whether or not to only return distinct
+      results.&nbsp; There is a helper tool for setting up the queries -
+      they are ultimately written in javascript not SQL but are
+      generally very flexible.<br>
+    </p>
+    <p>Finally there is a search option included in the bibliography as
+      explained <a href="#Bibliography">above</a>.<br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p> </p>
+  </body>
+</html>
