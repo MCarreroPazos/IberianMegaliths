@@ -168,9 +168,9 @@ If you use this code or data, please cite:
 
 ---
 
-## Main contact
+## Contact
 
-**Miguel Carrero-Pazos** — [miguel.carrero@usc.es](mailto:miguel.carrero@usc.es)  
+**Miguel Carrero-Pazos** - [miguel.carrero@usc.es](mailto:miguel.carrero@usc.es)  
 Department of History, University of Santiago de Compostela (GEPN-AAT / CISPAC), Spain  
 ORCID: [0000-0001-9203-9954](https://orcid.org/0000-0001-9203-9954)
 
