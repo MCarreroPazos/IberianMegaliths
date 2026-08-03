@@ -3,6 +3,7 @@
 [![R Version](https://img.shields.io/badge/R-≥4.3.2-blue.svg)](https://www.r-project.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 ## Overview
 
@@ -153,7 +154,7 @@ If you use this code or data, please cite:
 ```
 
 **Code repository:** https://github.com/mcarreropazos/IberianMegaliths  
-**Data repository:** [Zenodo DOI to be added]
+**Data repository:** https://doi.org/10.5281/zenodo.21772034
 
 ---
 
