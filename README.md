@@ -15,7 +15,7 @@ This repository contains the R code and data for the manuscript:
 > 
 > Our results indicate that material type bias, specifically charcoal over-representation, can distort the kinds of spatial origin models with radiocarbon that are now popular. Using a Bayesian trapezoidal model, we identify a polycentric model consistent with an initial “latent phase” of proto-megalithic experimentation, starting as early as ca. 5500 BCE. While southern and interior regions of Iberia exhibit a significant interval between initial emergence and peak constructive density, the North was characterized by a rapid and explosive adoption during the late 5th millennium BCE. We challenge current single-source diffusion models and demonstrate that spatial modelling of radiocarbon datasets requires rigorous chronometric filtering. Specifically, in regions where acidic soils prevent bone preservation, such as Northwestern Iberia, systematic dating programs integrating traditional radiocarbon with alternative methods like optically stimulated luminescence (OSL) are essential to obtain a high-resolution picture of early monumentality.
 
-📄 **Read the manuscript:** [View manuscript.html](https://htmlpreview.github.io/?https://github.com/miguelcarrero/IberianMegaliths/blob/main/manuscript/manuscript.html)
+**Read the manuscript:** [View manuscript.html](https://mcarreropazos.github.io/IberianMegaliths/manuscript/manuscript.html)
 
 ---
 
