@@ -15,8 +15,8 @@ authors:
     email: miguel.carrero@usc.es
     affiliation: University of Santiago de Compostela, GEPN-AAT / CISPAC
     orcid: 'https://orcid.org/0000-0001-9203-9954'
-repository-code: 'https://github.com/miguelcarrero/IberianMegaliths'
-url: 'https://github.com/miguelcarrero/IberianMegaliths'
+repository-code: 'https://github.com/mcarreropazos/IberianMegaliths'
+url: 'https://github.com/mcarreropazos/IberianMegaliths'
 abstract: >-
   This repository contains the R code and data for the paper
   "Material type bias affects radiocarbon-based diffusion models for 

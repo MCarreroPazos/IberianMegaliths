@@ -3,8 +3,8 @@
   "@type": "SoftwareSourceCode",
   "name": "IberianMegaliths",
   "description": "Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megalithic complex. Includes complete R code, data, and Docker environment for long-term reproducibility.",
-  "identifier": "https://github.com/miguelcarrero/IberianMegaliths",
-  "codeRepository": "https://github.com/miguelcarrero/IberianMegaliths",
+  "identifier": "https://github.com/mcarreropazos/IberianMegaliths",
+  "codeRepository": "https://github.com/mcarreropazos/IberianMegaliths",
   "dateCreated": "2025-11-22",
   "dateModified": "2026-04-20",
   "datePublished": "2026-01-02",
@@ -207,20 +207,20 @@
     "datePublished": "2026",
     "identifier": "https://doi.org/10.XXXX/XXXXX"
   },
-  "readme": "https://github.com/miguelcarrero/IberianMegaliths/blob/main/README.md",
-  "issueTracker": "https://github.com/miguelcarrero/IberianMegaliths/issues",
-  "contIntegration": "https://github.com/miguelcarrero/IberianMegaliths/actions",
+  "readme": "https://github.com/mcarreropazos/IberianMegaliths/blob/main/README.md",
+  "issueTracker": "https://github.com/mcarreropazos/IberianMegaliths/issues",
+  "contIntegration": "https://github.com/mcarreropazos/IberianMegaliths/actions",
   "developmentStatus": "active",
-  "releaseNotes": "https://github.com/miguelcarrero/IberianMegaliths/releases",
-  "buildInstructions": "https://github.com/miguelcarrero/IberianMegaliths/blob/main/docker/README.md",
+  "releaseNotes": "https://github.com/mcarreropazos/IberianMegaliths/releases",
+  "buildInstructions": "https://github.com/mcarreropazos/IberianMegaliths/blob/main/docker/README.md",
   "softwareHelp": [
     {
       "@type": "WebPage",
-      "url": "https://github.com/miguelcarrero/IberianMegaliths/blob/main/README.md",
+      "url": "https://github.com/mcarreropazos/IberianMegaliths/blob/main/README.md",
       "name": "Main README"
     }
   ],
-  "citation": "https://github.com/miguelcarrero/IberianMegaliths/blob/main/CITATION.cff",
+  "citation": "https://github.com/mcarreropazos/IberianMegaliths/blob/main/CITATION.cff",
   "relatedLink": [
     "https://zenodo.org/record/XXXXXXX"
   ],
@@ -229,8 +229,8 @@
   "memoryRequirements": "4GB RAM minimum, 8GB recommended",
   "storageRequirements": "5-10GB disk space",
   "processorRequirements": "Any modern CPU",
-  "downloadUrl": "https://github.com/miguelcarrero/IberianMegaliths/archive/refs/tags/v1.0.0.zip",
-  "installUrl": "https://github.com/miguelcarrero/IberianMegaliths/blob/main/README.md#installation",
+  "downloadUrl": "https://github.com/mcarreropazos/IberianMegaliths/archive/refs/tags/v1.0.0.zip",
+  "installUrl": "https://github.com/mcarreropazos/IberianMegaliths/blob/main/README.md#installation",
   "targetProduct": {
     "@type": "SoftwareApplication",
     "name": "Iberian Megaliths Analysis Results",
