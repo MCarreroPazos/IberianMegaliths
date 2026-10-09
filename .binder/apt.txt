@@ -1,0 +1,8 @@
+libgdal-dev
+libgeos-dev
+libproj-dev
+libudunits2-dev
+libxml2-dev
+libssl-dev
+curl
+gdebi-core
