@@ -6,12 +6,9 @@ editor_options:
 
 # Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megalithic complex
 
-[![R
-Version](https://img.shields.io/badge/R-≥4.3.2-blue.svg)](https://www.r-project.org/)
-[![License:
-MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![License: CC BY
-4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+[![R Version](https://img.shields.io/badge/R-≥4.3.2-blue.svg)](https://www.r-project.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21772034.svg)](https://doi.org/10.5281/zenodo.21772034)
 
 ## Overview
@@ -19,37 +16,14 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 This repository contains the data, R scripts, and a reproducible Quarto
 manuscript file supporting the article:
 
-> **"Material type bias affects radiocarbon-based diffusion models for
-> the origin and spread of Iberian megalithic complex"**\
-> Carrero-Pazos, M., Bevan, A., Crema, E.R., Rodríguez-Rellán, C.,
-> Díaz-Rodríguez, M., Martín Seijo, M., Fábregas Valcarce, R. (2026).
-> *PLOS ONE*.
+> **"Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megalithic complex"**  
+> Carrero-Pazos, M., Bevan, A., Crema, E.R., Rodríguez-Rellán, C., Díaz-Rodríguez, M., Martín Seijo, M., Fábregas Valcarce, R. (2026). *PLOS ONE*.
 
-Abstract: Megalithic monuments refer to large, often mounded, structures
-made of both earth and worked stone slabs that were frequently used as
-collective burial places in prehistoric Europe. The Iberian Peninsula
-was an early centre for such monuments, boasting one of the largest
-concentrations of sites in Europe, with activity generally spanning
-5000-2500 BCE. Debates since the 19th century have been centred on
-whether these monuments originated from a single source or emerged
-independently in different territories. This paper addresses this
-question using over 1,000 radiocarbon dates from 337 Iberian megalithic
-sites. Our results indicate that material type bias, specifically
-charcoal over-representation, can distort the kinds of spatial origin
-models with radiocarbon that are now popular. Using a Bayesian
-trapezoidal model, we identify a polycentric model consistent with an
-initial “latent phase” of proto-megalithic experimentation, starting as
-early as ca. 5500 BCE. While southern and interior regions of Iberia
-exhibit a significant interval between initial emergence and peak
-constructive density, the North was characterized by a rapid and
-explosive adoption during the late 5th millennium BCE. We challenge
-current single-source diffusion models and demonstrate that spatial
-modelling of radiocarbon datasets requires rigorous chronometric
-filtering. Specifically, in regions where acidic soils prevent bone
-preservation, such as Northwestern Iberia, systematic dating programs
-integrating traditional radiocarbon with alternative methods like
-optically stimulated luminescence (OSL) are essential to obtain a
-high-resolution picture of early monumentality.
+## Abstract
+
+Megalithic monuments refer to large, often mounded, structures made of both earth and worked stone slabs that were frequently used as collective burial places in prehistoric Europe. The Iberian Peninsula was an early centre for such monuments, boasting one of the largest concentrations of sites in Europe, with activity generally spanning 5000-2500 BCE. Debates since the 19th century have been centred on whether these monuments originated from a single source or emerged independently in different territories. This paper addresses this question using over 1,000 radiocarbon dates from 337 Iberian megalithic sites.
+
+Our results indicate that material type bias, specifically charcoal over-representation, can distort the kinds of spatial origin models with radiocarbon that are now popular. Using a Bayesian trapezoidal model, we identify a polycentric model consistent with an initial “latent phase” of proto-megalithic experimentation, starting as early as ca. 5500 BCE. While southern and interior regions of Iberia exhibit a significant interval between initial emergence and peak constructive density, the North was characterized by a rapid and explosive adoption during the late 5th millennium BCE. We challenge current single-source diffusion models and demonstrate that spatial modelling of radiocarbon datasets requires rigorous chronometric filtering. Specifically, in regions where acidic soils prevent bone preservation, such as Northwestern Iberia, systematic dating programs integrating traditional radiocarbon with alternative methods like optically stimulated luminescence (OSL) are essential to obtain a high-resolution picture of early monumentality.
 
 **Read the manuscript (pre-review version):** [View
 manuscript.html](https://mcarreropazos.github.io/IberianMegaliths/manuscript/manuscript.html)
@@ -204,9 +178,8 @@ If you use this code or data, please cite:
 }
 ```
 
-**Code repository:**
-<https://github.com/mcarreropazos/IberianMegaliths>\
-**Data repository:** <https://doi.org/10.5281/zenodo.21772034>
+**Code repository:** https://github.com/mcarreropazos/IberianMegaliths  
+**Data repository:** https://doi.org/10.5281/zenodo.21772034
 
 ------------------------------------------------------------------------
 
@@ -220,12 +193,11 @@ If you use this code or data, please cite:
 
 ------------------------------------------------------------------------
 
-## Main Contact
+## Contact
 
-**Miguel Carrero-Pazos** —
-[miguel.carrero\@usc.es](mailto:miguel.carrero@usc.es)\
-Department of History, University of Santiago de Compostela (GEPN-AAT /
-CISPAC), Spain\
+**Miguel Carrero-Pazos** — [miguel.carrero@usc.es](mailto:miguel.carrero@usc.es)  
+Department of History, University of Santiago de Compostela (GEPN-AAT / CISPAC), Spain  
+ORCID: [0000-0001-9203-9954](https://orcid.org/0000-0001-9203-9954)
 ORCID: [0000-0001-9203-9954](https://orcid.org/0000-0001-9203-9954)
 
 ------------------------------------------------------------------------
