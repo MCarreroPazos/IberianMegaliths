@@ -1,6 +1,9 @@
 # install.R - R package dependencies for Binder environment
 
-options(repos = c(CRAN = "https://cloud.r-project.org"))
+# Ensure CRAN mirror points to Posit Package Manager for precompiled Linux binaries
+if (is.null(getOption("repos")) || identical(getOption("repos"), c(CRAN = "@CRAN@"))) {
+  options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/noble/2024-10-01"))
+}
 
 pkgs <- c(
   "sf",
@@ -28,7 +31,8 @@ if (length(new_pkgs) > 0) {
   install.packages(new_pkgs)
 }
 
-# High-resolution Natural Earth map data
+# High-resolution Natural Earth map data from r-universe
 if (!requireNamespace("rnaturalearthhires", quietly = TRUE)) {
-  remotes::install_github("ropensci/rnaturalearthhires")
+  install.packages("rnaturalearthhires", repos = "https://ropensci.r-universe.dev")
 }
+

@@ -9,7 +9,7 @@ fi
 # Install Quarto CLI (v1.4.553)
 if ! command -v quarto &> /dev/null; then
   echo "Installing Quarto CLI..."
-  curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.553/quarto-1.4.553-linux-amd64.deb
-  dpkg -i quarto-1.4.553-linux-amd64.deb || apt-get install -f -y
-  rm quarto-1.4.553-linux-amd64.deb
+  mkdir -p "$HOME/.local/bin"
+  curl -sL "https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.553/quarto-1.4.553-linux-amd64.tar.gz" | tar -zx -C "$HOME/.local" --strip-components=1
 fi
+
