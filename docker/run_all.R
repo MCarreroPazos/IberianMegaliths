@@ -1,7 +1,11 @@
 # Master script to reproduce all analysis and manuscript in Docker
 
 # 1. Set up environment
-setwd("/home/rstudio/IberianMegaliths")
+if (dir.exists("/home/rstudio/IberianMegaliths")) {
+  setwd("/home/rstudio/IberianMegaliths")
+} else if (requireNamespace("here", quietly = TRUE)) {
+  setwd(here::here())
+}
 
 # 2. Run main figures
 message("Generating Figure 2")

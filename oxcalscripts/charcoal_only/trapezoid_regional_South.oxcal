@@ -1,0 +1,34 @@
+Plot(){
+  Options(){ MCMC_Iterations=100000; Convergence=95; };
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Outlier_Model("Charcoal",Exp(1,-10,0),U(0,3),"t");
+  Sequence(){
+    Boundary("MidStart_South"){
+      Transition("Duration_Start_South");
+      Start("Onset_South");
+      End("Peak_South");
+    };
+    Phase("South"){
+      R_Date("Beta-80602",5320,70){Outlier("Charcoal",1);};
+      R_Date("Beta-180978",5810,40){Outlier("Charcoal",1);};
+      R_Date("CNA-346",4410,50){Outlier("Charcoal",1);};
+      R_Date("Ua-24582",4935,40){Outlier("Charcoal",1);};
+      R_Date("GrN-16067",4550,140){Outlier("Charcoal",1);};
+      R_Date("CSIC-81_C",4290,92){Outlier("Charcoal",1);};
+      R_Date("CNA-034",4168,55){Outlier("Charcoal",1);};
+      R_Date("Beta-150157",4200,70){Outlier("Charcoal",1);};
+      R_Date("KN-72",4380,120){Outlier("Charcoal",1);};
+      R_Date("Beta-233951",4480,40){Outlier("Charcoal",1);};
+      R_Date("Beta-233956",4220,40){Outlier("Charcoal",1);};
+      R_Date("CNA-342",4070,50){Outlier("Charcoal",1);};
+      R_Date("Beta-153911",4410,60){Outlier("Charcoal",1);};
+      R_Date("Ua-10830",4905,70){Outlier("Charcoal",1);};
+      R_Date("KIA-31381",4996,29){Outlier("Charcoal",1);};
+    };
+    Boundary("MidEnd_South"){
+      Start("Decline_South");
+      Transition("Duration_End_South");
+      End("Disappear_South");
+    };
+  };
+};

@@ -1,4 +1,5 @@
-# ESM Table S1: Model comparison ----
+# ESM Table S1. Model comparison ----
+# Load libraries
 library(sf)
 library(quantreg)
 library(dplyr)
@@ -6,7 +7,7 @@ library(here)
 library(rnaturalearth)
 library(rcarbon)
 
-# Part 1: Load and Prepare Data ----
+# Part 1. Load and Prepare Data ----
 dates <- read.csv2(here("data", "C14dates_Iberia_raw.csv"), na.strings = "n/a", check.names = FALSE)
 dates <- dates[dates$Excluded == "No", ]
 
@@ -21,7 +22,7 @@ dates <- dates[!is.na(dates$Eastings_X) & !is.na(dates$Northings_Y) & !is.na(dat
 dates_cal <- calibrate(x = dates$C14, errors = dates$STD, normalised = TRUE, calCurves = "intcal20")
 dates$medianBP <- as.numeric(summary(dates_cal)$MedianBP)
 
-# Define Spatial Scenarios ----
+# Define the spatial scenarios ----
 is_charcoal <- grepl("charcoal", dates$Material, ignore.case = TRUE)
 is_nw <- dates$Eastings_X < 750000
 is_target <- is_charcoal & is_nw
@@ -31,11 +32,11 @@ dates$BP_corr <- dates$medianBP
 dates$BP_corr[is_target] <- dates$medianBP[is_target] - 500
 dates_bone <- dates[grepl("bone|human|tooth|teeth", dates$Material, ignore.case = TRUE), ]
 
-# Part 2: Geographic Context ----
+# Part 2. Add geographical context ----
 iberia <- ne_countries(country = c("spain", "portugal"), returnclass = "sf", scale = 10)
 iberia <- st_union(st_transform(iberia, 25829))
 
-# Part 3: Fixed Origin Points ----
+# Part 3. Include fixed origin points ----
 pt_sw <- st_sfc(st_point(c(-8.18245, 37.25054)), crs = 4326) %>% st_transform(25829)
 pt_ch <- st_sfc(st_point(c(-6.21189, 36.44627)), crs = 4326) %>% st_transform(25829)
 pt_ne <- st_sfc(st_point(c(2.516088, 42.031588)), crs = 4326) %>% st_transform(25829)
@@ -43,20 +44,17 @@ pt_ne <- st_sfc(st_point(c(2.516088, 42.031588)), crs = 4326) %>% st_transform(2
 fixed_points <- list(
   Southwest = st_coordinates(pt_sw),
   Campo_Hockey = st_coordinates(pt_ch),
-  Northeast = st_coordinates(pt_ne)
-)
+  Northeast = st_coordinates(pt_ne))
 
-# Part 4: Evaluation Loop ----
+# Part 4. Create and execute the evaluation loop ----
 scenarios <- list(
   Raw = list(data = dates, bp = "BP_raw", constrained = FALSE),
   Corrected_500y = list(data = dates, bp = "BP_corr", constrained = FALSE),
-  Bone_Only = list(data = dates_bone, bp = "medianBP", constrained = TRUE)
-)
+  Bone_Only = list(data = dates_bone, bp = "medianBP", constrained = TRUE))
 
 results_master <- data.frame()
 
 for (scen_name in names(scenarios)) {
-  message(sprintf("Processing Scenario: %s", scen_name))
   scen_conf <- scenarios[[scen_name]]
   d <- scen_conf$data
   bp_vec <- d[[scen_conf$bp]]
@@ -64,7 +62,7 @@ for (scen_name in names(scenarios)) {
   
   # Define Search Area
   if (scen_conf$constrained) {
-    # Constrain search area only for Bone Only scenario
+    # Constrain search area only for bone only scenario
     d_sf <- st_as_sf(d, coords = c("Eastings_X", "Northings_Y"), crs = 25829)
     d_buffer <- st_union(st_buffer(d_sf, 100000))
     search_area <- st_intersection(iberia, d_buffer)
@@ -95,10 +93,9 @@ for (scen_name in names(scenarios)) {
     Model = "Data-driven",
     AIC = AIC(m_best),
     Slope = coefficients(m_best)[2],
-    Velocity_km_y = -1 / (coefficients(m_best)[2] / 1000),
+    Velocity_km_y = -1 / (coefficients(m_best)[2] * 1000),
     Easting = best_pt[1],
-    Northing = best_pt[2]
-  ))
+    Northing = best_pt[2]))
   
   # Fixed Points
   for (orig_name in names(fixed_points)) {
@@ -110,10 +107,9 @@ for (scen_name in names(scenarios)) {
       Model = orig_name,
       AIC = AIC(m_f),
       Slope = coefficients(m_f)[2],
-      Velocity_km_y = ifelse(coefficients(m_f)[2] < 0, -1 / (coefficients(m_f)[2] / 1000), NA),
+      Velocity_km_y = ifelse(coefficients(m_f)[2] < 0, -1 / (coefficients(m_f)[2] * 1000), NA),
       Easting = pt[1],
-      Northing = pt[2]
-    ))
+      Northing = pt[2]))
   }
 }
 
@@ -123,4 +119,4 @@ results_master <- results_master %>%
   mutate(DeltaAIC = AIC - min(AIC[Slope < 0], na.rm = TRUE)) %>%
   arrange(Scenario, AIC)
 
-write.csv2(results_master, here("esm", "Table_S1_Origin_Comparison.csv"), row.names = FALSE)
+write.csv2(results_master, here("esm", "Table_S1.csv"), row.names = FALSE)

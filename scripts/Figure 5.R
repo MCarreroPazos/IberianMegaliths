@@ -48,13 +48,14 @@ earliest$LabNumber <- make.unique(as.character(earliest$LabNumber))
 
 # Part 2. Run one OxCal trapezoidal model per region ----
 posteriors_list <- run_regional_trapezoid(
-  region_names   = region_names,
-  dates_earliest = earliest,
-  oxcal_path     = oxcal_path,
-  scripts_dir    = here("oxcalscripts"),
-  results_dir    = here("oxcalresults"),
-  nsim           = nsim,
-  n_cores        = 20)   # Threadripper PRO 7965WX: 20 dedicated physical cores
+  region_names    = region_names,
+  dates_earliest  = earliest,
+  oxcal_path      = oxcal_path,
+  scripts_dir     = here("oxcalscripts"),
+  results_dir     = here("oxcalresults"),
+  nsim            = nsim,
+  n_cores         = 20,   # Threadripper PRO 7965WX: 20 dedicated physical cores
+  force_recompute = TRUE)
 
 
 # Convert to BCE and scale the results

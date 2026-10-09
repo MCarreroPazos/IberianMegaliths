@@ -2,7 +2,7 @@
 
 This folder contains all the reproducible environment needed to the **complete reproducibility** of the paper:
 
-> Carrero-Pazos, M. et al. (2026). *Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megaliths*. [Journal name].
+> Carrero-Pazos, M. et al. (2026). *Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megaliths*. *PLOS ONE*
 
 ---
 

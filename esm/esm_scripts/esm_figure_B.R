@@ -8,19 +8,125 @@ library(rcarbon)
 library(grDevices)
 library(graphics)
 library(stats)
+library(parallel)
 
-# Color palette (same as Figure 5 and Figure 6)
+# Set execution flags -----
+# Change to TRUE to re-run all OxCal MCMC models from scratch
+force_recompute <- FALSE
+
+oxcal_path <- here("OxCal", "bin", "OxCalWin.exe")
+setOxcalExecutablePath(oxcal_path)
+
+source(here("src", "oxcalScriptCreator.R"))
+source(here("src", "oxcalParsing.R"))
+
+regions_test <- c("Duero basins", "South", "Tagus basins")
+subsets_test <- c("chamber_bone", "chamber_charcoal", "chamber_combined")
+region_labels <- c(Duero_basins = "Duero basins", South = "South", Tagus_basins = "Tagus basins")
+
+# Check if RDS files exist
+all_rds_exist <- all(sapply(subsets_test, function(s) {
+  all(sapply(c("Duero_basins", "South", "Tagus_basins"), function(r) {
+    file.exists(here("oxcalresults", s, paste0("trapezoid_regional_", r, ".rds")))
+  }))
+}))
+
+# Optional Recompute Block -----
+if (force_recompute || !all_rds_exist) {
+  message("Running chamber trapezoidal OxCal models with Charcoal Outlier Model...")
+  raw_df <- read.csv(here("data", "C14dates_Iberia_raw.csv"), sep = ";", encoding = "UTF-8", stringsAsFactors = FALSE)
+  
+  jobs <- list()
+  for (s in subsets_test) {
+    for (r in c("Duero_basins", "South", "Tagus_basins")) {
+      fn_oxcal <- here("oxcalscripts", s, paste0("trapezoid_regional_", r, ".oxcal"))
+      if (!file.exists(fn_oxcal)) next
+      
+      lines <- readLines(fn_oxcal)
+      dlines <- grep("R_Date", lines, value = TRUE)
+      labs <- character()
+      for (dl in dlines) {
+        m <- regmatches(dl, regexec('R_Date\\("([^"]+)"', dl))[[1]]
+        if (length(m) >= 2) labs <- c(labs, m[2])
+      }
+      
+      sub_df <- do.call(rbind, lapply(labs, function(l) {
+        raw_df[raw_df$LabNumber == l, ][1, ]
+      }))
+      
+      jobs[[paste(s, r, sep = "___")]] <- list(
+        subset = s,
+        region = r,
+        labs = sub_df$LabNumber,
+        c14 = as.numeric(sub_df$C14),
+        std = as.numeric(sub_df$STD),
+        mat = sub_df$Material)
+    }
+  }
+  
+  run_job_internal <- function(job, ox_path, root_dir) {
+    library(oxcAAR)
+    setOxcalExecutablePath(ox_path)
+    source(file.path(root_dir, "src", "oxcalScriptCreator.R"))
+    source(file.path(root_dir, "src", "oxcalParsing.R"))
+    
+    s <- job$subset
+    r <- job$region
+    
+    mat_vec <- if (s == "chamber_charcoal") {
+      rep("Charcoal", length(job$labs))
+    } else if (s == "chamber_bone") {
+      rep("Human bone", length(job$labs))
+    } else {
+      job$mat
+    }
+    
+    fn_script <- file.path(root_dir, "oxcalscripts", s, paste0("trapezoid_regional_", r, ".oxcal"))
+    fn_rds    <- file.path(root_dir, "oxcalresults", s, paste0("trapezoid_regional_", r, ".rds"))
+    
+    oxcalRegionalTrapezoidScript(
+      region_name           = r,
+      c14ages               = job$c14,
+      errors                = job$std,
+      lab_ids               = job$labs,
+      materials             = mat_vec,
+      fn                    = fn_script,
+      iterations            = 100000,
+      convergence_threshold = 95)
+    
+    tmpdir <- tempfile(pattern = paste0("ox_", s, "_", r, "_"))
+    dir.create(tmpdir)
+    oldwd <- setwd(tmpdir)
+    on.exit({
+      setwd(oldwd)
+      try(unlink(tmpdir, recursive = TRUE), silent = TRUE)
+    }, add = TRUE)
+    
+    res_file <- executeOxcalScript(paste(readLines(fn_script, warn = FALSE), collapse = "\n"))
+    parsed   <- parse_oxcal_output(readLines(res_file, warn = FALSE))
+    post     <- extract_regional_posteriors(parsed, r, 100000)
+    saveRDS(post, fn_rds)
+    return(r)
+  }
+  
+  n_cores <- min(length(jobs), detectCores() - 1, 9)
+  root_dir <- here()
+  cl <- makeCluster(n_cores)
+  clusterExport(cl, c("jobs", "oxcal_path", "run_job_internal", "root_dir"), envir = environment())
+  parLapply(cl, jobs, function(jb) run_job_internal(jb, oxcal_path, root_dir))
+  stopCluster(cl)
+}
+
+# Color palette (same as Figure 5 and Figure 6) -----
 param_cols <- c(
   onset     = "#2166ac",
   peak      = "#1a9641",
   decline   = "#d7191c",
-  disappear = "#7b2d8b"
-)
+  disappear = "#7b2d8b")
+
 param_names   <- c("onset", "peak", "decline", "disappear")
 param_labels  <- c("Onset", "Peak", "Decline", "Disappear")
 param_offsets <- c(onset = 0.35, peak = 0.12, decline = -0.12, disappear = -0.35)
-
-regions_test <- c("Duero basins", "South", "Tagus basins")
 
 # Helper function
 to_bce <- function(v) -v
@@ -180,6 +286,3 @@ legend(x = "bottomleft", inset = c(0.02, 0.02),
        title  = expression(bold("Phase parameter")))
 
 dev.off()
-
-si <- sessionInfo()
-# print(si)

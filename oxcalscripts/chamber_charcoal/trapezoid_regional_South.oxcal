@@ -1,6 +1,7 @@
 Plot(){
   Options(){ MCMC_Iterations=100000; Convergence=95; };
-  Outlier_Model("",N(0,2),0,"s");
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Outlier_Model("Charcoal",Exp(1,-10,0),U(0,3),"t");
   Sequence(){
     Boundary("MidStart_South"){
       Transition("Duration_Start_South");
@@ -8,10 +9,10 @@ Plot(){
       End("Peak_South");
     };
     Phase("South"){
-      R_Date("CSIC-81_C",4290,92){Outlier(0.05);};
-      R_Date("KN-72",4380,120){Outlier(0.05);};
-      R_Date("Beta-233951",4480,40){Outlier(0.05);};
-      R_Date("Beta-153911",4410,60){Outlier(0.05);};
+      R_Date("CSIC-81_C",4290,92){Outlier("Charcoal",1);};
+      R_Date("KN-72",4380,120){Outlier("Charcoal",1);};
+      R_Date("Beta-233951",4480,40){Outlier("Charcoal",1);};
+      R_Date("Beta-153911",4410,60){Outlier("Charcoal",1);};
     };
     Boundary("MidEnd_South"){
       Start("Decline_South");

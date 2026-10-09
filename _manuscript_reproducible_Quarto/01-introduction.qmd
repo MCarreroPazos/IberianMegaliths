@@ -9,7 +9,7 @@ In archaeological terms, the megalithic complex is a typologically diverse funer
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: "Different megalithic architectures in the Iberian Peninsula. A: A Ordem (Alentejo); B: A Mámoa do Rei (Galicia); C: Rock-cut-tomb of Alapraia (Estoril); D: Mounds of Serra do Leboreiro (Northwest border of Portugal). Photographs by Prof. Antón A. Rodríguez Casal. Reproduced with permission."
+#| fig-cap: "Different megalithic architectures in the Iberian Peninsula. A: A Ordem (Alentejo); B: A Mámoa do Rei (Galicia); C: Rock-cut-tomb of Alapraia (Estoril); D: Mounds of Serra do Leboreiro (Northwest border of Portugal). Photographs A and C by Antón A. Rodríguez Casal, published under a CC BY 4.0 license with permission. Photographs B and D by the authors."
 #| out-width: "100%"
 
 knitr::include_graphics("figures/Figure 1.png")
@@ -39,14 +39,14 @@ Radiocarbon datasets are very important for understanding the megalithic phenome
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: "A) The density of radiocarbon dates per 100 km² as potentially relevant to the Iberian megalithic phenomenon. B) The percentage of dates which are charcoal relative to total megalith-related dates in that area."
+#| fig-cap: "Spatial distribution of radiocarbon dating intensity and charcoal-dating bias across Iberian megalithic contexts. A) The density of radiocarbon dates per 100 km² as potentially relevant to the Iberian megalithic phenomenon. B) The percentage of dates which are charcoal relative to total megalith-related dates in that area. Base maps created with Natural Earth public domain map data (http://www.naturalearthdata.com/)."
 #| out-width: "100%"
 
 knitr::include_graphics("figures/Figure 2.png")
 ```
 
-@fig-sample-bias B clearly illustrates this spatial dichotomy: the chronology of northwestern megaliths and adjacent regions is mainly built over charcoal samples, whereas those from the south and east rely mostly on short-lived samples. This situation justifies the need to test models that specifically attempt to correct for this bias, or which exclude the use of charcoal in these regions altogether (as done by @garcia-sanjuan2022; @linares2022).
+@fig-sample-bias B clearly illustrates this spatial dichotomy: the chronology of northwestern megaliths and adjacent regions is mainly built over charcoal samples, whereas those from the south and east rely mostly on short-lived samples. This situation justifies the need to test models that specifically attempt to correct for this bias, or which exclude the use of charcoal in these regions altogether [@garcia-sanjuan2022; @linares2022; @santacruz2024].
 
 In numerical terms, of the 135 dates included in our database for north Iberian regions, 100 were obtained from charcoal (usually Quercus where known, but in most cases the species was not identified nor the part or the tree ring curvature). This pattern may be artificially causing older chronological trends in areas such as Galicia, Asturias, or northern Portugal due to an anticipated old wood effect (perhaps of 200 years in the case of oak, but potentially more for certain other species). This is the reason why previous work applied strict radiocarbon date hygiene protocols and only considered one date for Galicia and Asturias [@garcia-sanjuan2022].
 
-In this paper, however, we move beyond traditional chronological compilations by critically evaluating the reliability of the whole, available radiocarbon record, with a particular focus on biases introduced by sample material (e.g. an "old wood effect"). We employ a robust statistical framework combining a Bayesian Phase model to estimate the origination date of megalithic construction in Iberia along with spatially-explicit, quantile regression models to discuss the origin and spread of the phenomenon. This combination allows us to formally test previous hypotheses regarding the origin of the phenomenon, and offer a new, statistically grounded perspective on one of the most relevant topics in the European later prehistory.
+In this paper, however, we move beyond traditional chronological compilations by critically evaluating the reliability of the whole, available radiocarbon record, with a particular focus on biases introduced by sample material (e.g. an "old wood effect"). We employ a robust statistical framework combining a Bayesian Phase model to estimate the origination date of megalithic construction in Iberia along with spatially explicit, quantile regression models to discuss the origin and spread of the phenomenon. This combination allows us to formally test previous hypotheses regarding the origin of the phenomenon, and offer a new, statistically grounded perspective on one of the most relevant topics in the European later prehistory.

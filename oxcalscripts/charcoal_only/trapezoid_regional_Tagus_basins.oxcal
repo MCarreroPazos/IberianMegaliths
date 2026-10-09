@@ -1,0 +1,24 @@
+Plot(){
+  Options(){ MCMC_Iterations=100000; Convergence=95; };
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Outlier_Model("Charcoal",Exp(1,-10,0),U(0,3),"t");
+  Sequence(){
+    Boundary("MidStart_Tagus_basins"){
+      Transition("Duration_Start_Tagus_basins");
+      Start("Onset_Tagus_basins");
+      End("Peak_Tagus_basins");
+    };
+    Phase("Tagus_basins"){
+      R_Date("S4.16C/0308",4480,30){Outlier("Charcoal",1);};
+      R_Date("ICEN-976",4240,150){Outlier("Charcoal",1);};
+      R_Date("Sac-1380",5400,210){Outlier("Charcoal",1);};
+      R_Date("Beta-191133",4650,50){Outlier("Charcoal",1);};
+      R_Date("GrA-15903",5000,60){Outlier("Charcoal",1);};
+    };
+    Boundary("MidEnd_Tagus_basins"){
+      Start("Decline_Tagus_basins");
+      Transition("Duration_End_Tagus_basins");
+      End("Disappear_Tagus_basins");
+    };
+  };
+};

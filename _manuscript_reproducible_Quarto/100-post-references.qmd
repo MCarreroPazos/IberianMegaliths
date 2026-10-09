@@ -1,6 +1,24 @@
 # Acknowledgments
 
-The authors are grateful to Antón A. Rodríguez Casal for some of the photographs of the Figure 1 and to Enrique Cerrillo for its insightful comments on a previous version of this manuscript. The lead author's contribution to this research was in part supported by a Marie Sklodowska-Curie grant (reference 886793) hosted at the UCL Institute of Archaeology, and by the projects "Detección automática de monumentos tumulares e megalíticos mediante tecnoloxía LiDAR e Intelixencia Artificial (DISCOVER)" (USC 2025-PU014, PI: Miguel Carrero Pazos), "Paisajes Megalíticos: Explorando los factores humanos y ambientales de las sociedades neolíticas en el noroeste de la Península Ibérica (V-II milenio a.C.) (MegaLands)", PID2024-156264NA-I00 funded by MICIU/AEI/10.13039/501100011033/ FEDER, UE (PI: Miguel Carrero Pazos, Noemí Silva Sánchez).
+The authors are grateful to Antón A. Rodríguez Casal for some of the photographs of Figure 1 and to Enrique Cerrillo for his insightful comments on an earlier version of this manuscript. They also wish to thank Reviewer 1 and Dr. Rowan McLaughlin (Reviewer 2) for their constructive suggestions, which substantially contributed to improving the final version of this paper. The lead author's contribution to this research was in part supported by a Marie Sklodowska-Curie grant (reference 886793) hosted at the UCL Institute of Archaeology, and by the projects "Detección automática de monumentos tumulares e megalíticos mediante tecnoloxía LiDAR e Intelixencia Artificial (DISCOVER)" (USC 2025-PU014, PI: Miguel Carrero Pazos), "Paisajes Megalíticos: Explorando los factores humanos y ambientales de las sociedades neolíticas en el noroeste de la Península Ibérica (V-II milenio a.C.) (MegaLands)", PID2024-156264NA-I00 funded by MICIU/AEI/10.13039/501100011033/ FEDER, UE (PI: Miguel Carrero Pazos, Noemí Silva Sánchez).
+
+# Ethics and data statement
+
+No permits were required for the described study, which complied with all relevant regulations. There were no new excavations made, and the authors did not perform any intervening, or destructive sampling of human or archaeological remains. All data analysed was taken from previously published work and consisted of the analysis of published radiocarbon dates and archaeological contexts compiled from open-access databases (Schulz-Paulsson [@schulzpaulsson2017; @schulzpaulsson2019], IDEArq C14 [@uriarte2017], CronoloGEA [@aranda2015], SIAC [@alday2019]) and published literature. Original laboratory identifiers, site names, contexts, dated materials (bone, teeth, charcoal), and primary bibliographic references are catalogued in the accompanying database deposited on Zenodo: <https://doi.org/10.5281/zenodo.21772034>.
+
+# Supporting information captions
+
+**Fig 1. Different megalithic architectures in the Iberian Peninsula.** A: A Ordem (Alentejo); B: A Mámoa do Rei (Galicia); C: Rock-cut-tomb of Alapraia (Estoril); D: Mounds of Serra do Leboreiro (Northwest border of Portugal). Photographs A and C by Antón A. Rodríguez Casal, published under a CC BY 4.0 license with permission. Photographs B and D by the authors.
+
+**Fig 2. Spatial distribution of radiocarbon dating intensity and charcoal-dating bias across Iberian megalithic contexts.** A) The density of radiocarbon dates per 100 km² as potentially relevant to the Iberian megalithic phenomenon. B) The percentage of dates which are charcoal relative to total megalith-related dates in that area. Base maps created with Natural Earth public domain map data (http://www.naturalearthdata.com/).
+
+**Fig 3. Inverse distance weighted (IDW) interpolation of ΔAIC values derived from a grid-based quantile regression analysis.** Lower ΔAIC values indicate a better statistical fit of an origin point to the observed age–distance relationship. The dashed contour marks the boundary where the regression slope (β₁) equals zero, separating origins producing positive (β₁ > 0) and negative (β₁ < 0) age–distance relationships. The global minimum ΔAIC among the evaluated grid points is located in northwestern Iberia. Although the interpolated surface also shows a secondary area of relatively low ΔAIC values in the southeast, this feature results from the IDW interpolation used for visualization and does not represent an equivalent optimum in the underlying grid search. Base maps created with Natural Earth public domain map data (http://www.naturalearthdata.com/).
+
+**Fig 4. Sensitivity of the data-driven megalithic origin model which identifies a possible NW origin model due to “old wood” effect.** A Monte Carlo sensitivity approach for the displacement of the most likely origin location (ΔAIC = 0) as charcoal ages are increasingly adjusted from 0 to 1,200 years (at 100-year intervals). The solid black line shows the distance from the most likely origin location with no corrections, and the dark and light grey bands show the 50% and 95% credible intervals. The threshold of 200 years is identified when the most likely origin changes its location by more than 700 km into the interior/eastern Iberia. Chronological spans of life and “old wood” correction of wood species found in the megalithic sites of Iberia, including short-lived shrub/hazel (0-100 years) and long-lived oak (*Quercus* sp., 100-1,200 years).
+
+**Fig 5. Probabilistic estimates of regional megalithic phases in Iberia.** Posterior probability distributions for the four parameters of a trapezoidal model: onset (blue), peak (green), decline (red), and disappear (purple). Regions are ordered by the median posterior estimate of their onset boundary. The density plots represent the posterior probability distributions of each parameter. Dots indicate the posterior median estimated from 100,000 MCMC samples. Vertical ticks along each baseline indicate the median calibrated age of each radiocarbon sample included in the corresponding regional model.
+
+**Fig 6. Comparison of regional megalithic phases between bone and teeth dates and the full dataset.** The plots show the posterior probability distributions for the four trapezoidal parameters (onset, peak, decline, and disappear) across the East, Tagus basins, South, and Ebro basin regions. For each parameter horizontal bars represent the 95% and 50% highest posterior density intervals (HPDI), respectively, while vertical grey lines indicate the posterior medians estimated from 100,000 MCMC samples.
 
 # Author information
 
@@ -14,7 +32,7 @@ Carlos Rodríguez-Rellán. University of Granada, Spain
 
 Mikel Díaz-Rodríguez. University of Vigo, GEAAT / CISPAC, Spain
 
-María Martín Seijo. Institute of Heritage Sciences, Incipit. Spanish National Research Council, CSIC, Spain
+María Martín-Seijo. Institute of Heritage Sciences, Incipit. Spanish National Research Council, CSIC, Spain
 
 Ramón Fábregas Valcarce. University of Santiago de Compostela, GEPN-AAT / CISPAC, Spain
 

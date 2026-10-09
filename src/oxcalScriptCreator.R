@@ -130,17 +130,21 @@ oxcalScriptGen = function(id,c14age,errors,group,site,fn,interval=100,mcnsim=500
 
 # ---------------------------------------------------------------------------
 # Regional trapezoidal model script generator (Lee & Bronk Ramsey 2012)
-# One script per region; each date = earliest per site
-# Returns 4 posteriors: Onset, Peak, Decline, Disappear
+# One script per region; each date = earliest per site. Returns 4 posteriors: Onset, Peak, Decline, Disappear
+# Includes one-sided Charcoal Outlier Model (Bronk Ramsey 2009)
 # ---------------------------------------------------------------------------
-oxcalRegionalTrapezoidScript <- function(region_name, c14ages, errors, lab_ids, fn, iterations = 30000, convergence_threshold = 95) {
+oxcalRegionalTrapezoidScript <- function(region_name, c14ages, errors, lab_ids, fn,
+                                         materials = NULL,
+                                         iterations = 30000, convergence_threshold = 95) {
   safe <- gsub("[^A-Za-z0-9]", "_", region_name)
   con  <- file(fn, "w")
   on.exit(close(con))
 
   cat("Plot(){\n",                                                file = con)
   cat(sprintf('  Options(){ MCMC_Iterations=%d; Convergence=%d; };\n', iterations, convergence_threshold), file = con)
-  cat('  Outlier_Model("",N(0,2),0,"s");\n',                     file = con)
+  # Outlier models in calendar time ("t")
+  cat('  Outlier_Model("General",T(5),U(0,4),"t");\n',            file = con)
+  cat('  Outlier_Model("Charcoal",Exp(1,-10,0),U(0,3),"t");\n',   file = con)
   cat("  Sequence(){\n",                                          file = con)
 
   # Start (onset) trapezoid boundary -----------------------------------------
@@ -153,8 +157,16 @@ oxcalRegionalTrapezoidScript <- function(region_name, c14ages, errors, lab_ids, 
   # Phase: one date per site --------------------------------------------------
   cat(sprintf('    Phase("%s"){\n', safe),                        file = con)
   for (i in seq_along(c14ages)) {
-    cat(sprintf('      R_Date("%s",%d,%d){Outlier(0.05);};\n',
-                lab_ids[i], round(c14ages[i]), round(errors[i])), file = con)
+    is_charcoal <- if (!is.null(materials)) grepl("charcoal", materials[i], ignore.case = TRUE) else FALSE
+    if (is_charcoal) {
+      # Charcoal outlier model with prior = 1 (inbuilt old wood age >= 0)
+      cat(sprintf('      R_Date("%s",%d,%d){Outlier("Charcoal",1);};\n',
+                  lab_ids[i], round(c14ages[i]), round(errors[i])), file = con)
+    } else {
+      # General outlier model with prior = 0.05
+      cat(sprintf('      R_Date("%s",%d,%d){Outlier("General",0.05);};\n',
+                  lab_ids[i], round(c14ages[i]), round(errors[i])), file = con)
+    }
   }
   cat("    };\n",                                                  file = con)
 

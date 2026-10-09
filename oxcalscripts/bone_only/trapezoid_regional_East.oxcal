@@ -1,6 +1,7 @@
 Plot(){
   Options(){ MCMC_Iterations=100000; Convergence=95; };
-  Outlier_Model("",N(0,2),0,"s");
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Outlier_Model("Charcoal",Exp(1,-10,0),U(0,3),"t");
   Sequence(){
     Boundary("MidStart_East"){
       Transition("Duration_Start_East");
@@ -8,14 +9,14 @@ Plot(){
       End("Peak_East");
     };
     Phase("East"){
-      R_Date("UGRA-156",4040,110){Outlier(0.05);};
-      R_Date("Beta-125440",4160,90){Outlier(0.05);};
-      R_Date("UGRA-148",5400,100){Outlier(0.05);};
-      R_Date("GaK-12162",5090,160){Outlier(0.05);};
-      R_Date("CNA-2330",5025,45){Outlier(0.05);};
-      R_Date("CNA-2331",5095,45){Outlier(0.05);};
-      R_Date("CNA-3051",5109,33){Outlier(0.05);};
-      R_Date("Beta-160374",5350,40){Outlier(0.05);};
+      R_Date("UGRA-156",4040,110){Outlier("General",0.05);};
+      R_Date("Beta-125440",4160,90){Outlier("General",0.05);};
+      R_Date("UGRA-148",5400,100){Outlier("General",0.05);};
+      R_Date("GaK-12162",5090,160){Outlier("General",0.05);};
+      R_Date("CNA-2330",5025,45){Outlier("General",0.05);};
+      R_Date("CNA-2331",5095,45){Outlier("General",0.05);};
+      R_Date("CNA-3051",5109,33){Outlier("General",0.05);};
+      R_Date("Beta-160374",5350,40){Outlier("General",0.05);};
     };
     Boundary("MidEnd_East"){
       Start("Decline_East");

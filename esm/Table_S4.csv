@@ -1,0 +1,173 @@
+Country;Latitude;Longitude;Eastings_X;Northings_Y;Region;Site;Architecture;Architecture_note;LabNumber;C14;STD;Delta13C;Delta15N;MarineResources;AquaticResources;DeltaR;DeltaRErr;Food.source;Material;Context_summary;Bibliography;Observations;Reason_for_exclusion
+Portugal;39,70853822;-7,983356294;587149;4395902;Tagus basins;Anta de Lajinha;Passage grave;n/a;ITNLUM-203;2000;200;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Regolith (quartz);Mound;Burbidge et al 2014/Lozano Medina 2017;n/a;Outlier
+Spain;40,049527;3,88244;1600399;4513594;East;Cala Morell;Rock-cut-tomb, artificial cave & hypogeum;n/a;UtC-4354;2080;25;n/a;n/a;n/a;n/a;n/a;n/a;Meat and vegetables. Low indices of marine resources;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Outlier
+Portugal;39,46134;-7,54437;625225;4368985;Tagus basins;Anta dos Currais do Galhordas;Passage grave;n/a;S3.15OS/0442;2270;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Organic material;Chamber;Monteiro-Rodrigues, Oliveira 2018, 453;n/a;Outlier
+Portugal;39,666806;-8,030353;583170;4391226;Tagus basins;Cabeço dos Pendentes;Passage grave;n/a;ITNLUM-440;2300;300;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Regolith (quartz);Mound soil;Burbidge et al 2014/Lozano Medina 2017;n/a;Outlier
+Spain;42,98467;-2,21247;1053468;4781518;North;Urrezulko Armurea;Dolmen;n/a;GrN-24857;2350;130;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age site
+Spain;42,94210021;-7,971405534;583918;4754898;North;Ponte da Pedra_new;Varia;n/a;GrN-19215;2565;45;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas, Vilaseco 2006;n/a;Outlier
+Spain;42,98467;-2,21247;1053468;4781518;North;Urrezulko Armurea;Dolmen;n/a;GrN-24856;2580;140;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age site
+Spain;42,9846702;-2,2124668;1053469;4781518;North;Urrezulko Armurea;Dolmen;n/a;I-19023;2640;240;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Outlier
+Spain;42,0044;1,413611;1362854;4703045;Ebro basin;Clara;Dolmen;n/a;UBAR-838;2685;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Funerary area;Telearchaeology.com;n/a;Outlier
+Spain;42,6256;-8,9375;505125;4719241;North;Alto da Barreira;Tumulus;n/a;CSIC-1038;2840;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294;n/a;Aberrant
+Spain;39,8974;4,1126;1622652;4499565;East;Ses Roques Llises;Passage grave;n/a;KIA-21225;2890;25;-19,84;8,36;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Portugal;39,70853822;-7,983356294;587149;4395902;Tagus basins;Anta de Lajinha;Passage grave;n/a;ITNLUM-274;2900;300;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Regolith (quartz);Mound;Burbidge et al 2014/Lozano Medina 2017;n/a;Outlier
+Spain;39,8974;4,1126;1622652;4499565;East;Ses Roques Llises;Passage grave;n/a;KIA-18767;2955;30;-19,59;9,63;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,8974;4,1126;1622652;4499565;East;Ses Roques Llises;Passage grave;n/a;KIA-18762;3030;40;-20,18;10,36;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;42,947767;-2,210353;1053974;4777432;Ebro basin;Unanibi;Dolmen;n/a;I-16275;3040;230;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Outlier
+Spain;42,97257;-2,25572;1050049;4779889;North;Zorroztarri;Dolmen;n/a;I-16276bis;3040;90;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age site
+Portugal;38,8375;-8,23917;566032;4299018;Tagus basins;Zambujeiro 4;Varia;n/a;Beta-196093;3040;40;-26,1;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Rocha 2005, 189-190;n/a;Outlier
+Portugal;41,0237;-7,4417;631010;4542557;Duero basins;Carvalhal;Dolmen;n/a;GrN-20792;3100;90;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Cruz 2003;n/a;Aberrant in the site context
+Portugal;40,7194;-7,86333;596000;4508229;Duero basins;Casinha Derribada;Varia;n/a;OxA-9910;3115;65;-25,7;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Cruz et al 1998;n/a;Bronze age site
+Spain;39,8974;4,1126;1622652;4499565;East;Ses Roques Llises;Passage grave;n/a;KIA-20204;3135;35;-19,33;9,02;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;42,4097;2,966944;1485307;4765197;East;Fontanilles;Passage grave;n/a;GaK-12934;3180;70;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Chamber;Telearchaeology.com;n/a;Outlier
+Portugal;39,4091;-7,3144;645118;4363531;Tagus basins;Anta das Castelhanas;Varia;n/a;OxA-5432;3220;65;-26,1;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Paleosol;Oliveira 1997;n/a;Aberrant
+Spain;38,7265;1,4458;1409077;4338592;East;Ca na Costa;Dolmen;n/a;BM-1677;3270;80;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Lull et al 2004/Mico Perez  2005/Van Strydonck et al 2005;DeltaR values from Monge Soares, Matos Martins 2010. ;Non megalithic site
+Spain;42,59383;-2,0531;1070062;4739161;Ebro basin;San Pelayo;Cist;n/a;I-16858;3270;90;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Sesma et al 2014/Mujika Alustiza et al 2016;n/a;Bronze age site
+Spain;42,59383;-2,0531;1070062;4739161;Ebro basin;San Pelayo;Cist;n/a;Beta-392699;3280;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Sesma et al 2014/Mujika Alustiza et al 2016;n/a;Bronze age site
+Spain;42,97257;-2,25572;1050049;4779889;North;Zorroztarri;Dolmen;n/a;I-16276;3280;90;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age site
+Spain;42,1314;3,023333;1494391;4734904;East;Tafaina;Dolmen;n/a;UBAR-246;3300;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Telearchaeology.com;n/a;Outlier
+Portugal;39,46134;-7,54437;625225;4368985;Tagus basins;Anta dos Currais do Galhordas;Passage grave;n/a;S2.15C/0441;3300;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Chamber;Monteiro-Rodrigues, Oliveira 2018, 453;n/a;Outlier
+Spain;39,754;3,1588;1542984;4471813;East;Son Baulo de Dalt;Dolmen;n/a;KIA-11903;3305;25;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,75;3,3033;1555474;4473090;East;S'Aigua Dolça;Dolmen;n/a;UtC-4739;3365;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,754;3,1588;1542984;4471813;East;Son Baulo de Dalt;Dolmen;n/a;KIA-13225;3365;30;-19,76;9,03;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,75;3,3033;1555474;4473090;East;S'Aigua Dolça;Dolmen;n/a;UtC-4736;3380;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,8974;4,1126;1622652;4499565;East;Ses Roques Llises;Passage grave;n/a;KIA- 18761;3395;35;-19,21;10,7;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;42,59383;-2,0531;1070062;4739161;Ebro basin;San Pelayo;Cist;n/a;Beta 381101;3400;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Sesma et al 2014/Mujika Alustiza et al 2016;n/a;Bronze age site
+Spain;39,8972;4,19;1629301;4500539;East;Montple;Dolmen;n/a;OxA-5807;3405;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005;n/a;Non megalithic site
+Spain;39,8972;4,19;1629301;4500539;East;Montple;Dolmen;n/a;OxA-5808;3410;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005;n/a;Non megalithic site
+Spain;39,8972;4,19;1629301;4500539;East;Montple;Dolmen;n/a;OxA-5806;3415;75;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005;n/a;Non megalithic site
+Spain;39,75;3,3033;1555474;4473090;East;S'Aigua Dolça;Dolmen;n/a;KIA-15224;3420;30;-19,4;8,1;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,8972;4,19;1629301;4500539;East;Montple;Dolmen;n/a;OxA-5811;3425;65;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005;n/a;Non megalithic site
+Spain;39,8972;4,19;1629301;4500539;East;Montple;Dolmen;n/a;IRPA-1183;3435;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005;n/a;Non megalithic site
+Spain;39,8972;4,19;1629301;4500539;East;Montple;Dolmen;n/a;OxA-5809;3460;65;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005;n/a;Non megalithic site
+Spain;39,75;3,3033;1555474;4473090;East;S'Aigua Dolça;Dolmen;n/a;UtC-4744;3460;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,754;3,1588;1542984;4471813;East;Son Baulo de Dalt;Dolmen;n/a;UBAR-385;3470;120;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,754;3,1588;1542984;4471813;East;Son Baulo de Dalt;Dolmen;n/a;KIA-13224;3480;30;-19,57;9,58;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;39,75;3,3033;1555474;4473090;East;S'Aigua Dolça;Dolmen;n/a;KIA-15223;3485;40;-19,6;9,4;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Mico Perez  2005/Van Strydonck et al 2005;n/a;Non megalithic site
+Spain;42,99369;-2,10908;1061819;4783210;North;Arraztarangaña;Cist;n/a;GrA-34322;3515;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Bone;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-35021;3525;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Bone;Funerary area;Bueno Ramirez et al 2014/Perez 2014;Geographic coordinates approximated;Non megalithic site
+Spain;42,95958;-2,21547;1053450;4778711;North;Aitxu;Cist;n/a;I-17615;3530;110;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age cist
+Spain;38,7265;1,4458;1409077;4338592;East;Ca na Costa;Dolmen;n/a;KIA-14330;3535;40;-18,79;12,74;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Lull et al 2004/Mico Perez  2005/Van Strydonck et al 2005;DeltaR values from Monge Soares, Matos Martins 2010. ;Non megalithic site
+Spain;42,95958;-2,21547;1053450;4778711;North;Aitxu;Cist;n/a;GrA-11494;3570;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Mujika Alustiza 2017, 95;n/a;Bronze age cist
+Spain;38,7265;1,4458;1409077;4338592;East;Ca na Costa;Dolmen;n/a;KIA-14329;3595;35;-18,69;9,06;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Lull et al 2004/Mico Perez  2005/Van Strydonck et al 2005;DeltaR values from Monge Soares, Matos Martins 2010. ;Non megalithic site
+Spain;41,96918;1,316438;1355271;4698142;Ebro basin;Santes Masses;Cist;n/a;UBAR210;3630;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Gonzalez-Marcen 2010;n/a;Bronze age cist
+Spain;42,59383;-2,0531;1070062;4739161;Ebro basin;San Pelayo;Cist;n/a;Beta-392698;3640;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Sesma et al 2014/Mujika Alustiza et al 2016;n/a;Bronze age site
+Portugal;39,55622455;-8,302174633;559950;4378736;Tagus basins;Val da Laje 1;Varia;n/a;n/a;3670;480;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Whittle, Arnaud 1975/Boaventura 2011/Lozano Medina 2017;n/a;Outlier
+Spain;41,7014;1,640833;1385927;4671688;East;Sierra de Clarena;Tholos;n/a;I-12396;3700;100;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Frances et al 2004;n/a;Lack of contextual data
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-35017;3740;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2007/Bueno Ramirez et al 2014/Perez 2014;Geographic coordinates approximated;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Beta-184837;3740;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Blasco et al 2007/Liesau et al 2008;Geographic coordinates approximated;Non megalithic site
+Portugal;39,55622455;-8,302174633;559950;4378736;Tagus basins;Val da Laje 1;Varia;n/a;n/a;3750;380;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Whittle, Arnaud 1975/Boaventura 2011/Lozano Medina 2017;n/a;Outlier
+Spain;40,22526;-3,7873;943591;4465810;Tagus basins;Humanejos;Varia;n/a;Ua-40217;3781;36;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2011/Bueno Ramirez et al 2016;n/a;Non megalithic site
+Spain;40,22526;-3,7873;943591;4465810;Tagus basins;Humanejos;Varia;n/a;Ua-43525;3797;32;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human teeth;Funerary area;Olalde et al 2018;n/a;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-39312;3819;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2014;Geographic coordinates approximated;Non megalithic site
+Spain;43,4964;-7,895;589338;4816534;North;Reboredo 1;Tumulus;n/a;GrN-19214;3820;70;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294/Vaquero Lastres 1995;n/a;Bronze age site
+Spain;40,4352942;-3,521655491;964760;4490507;Tagus basins;Camino de las Yeseras;Varia;n/a;UAM-MAD 3590;3877;302;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Pot;Funerary area;Liesau et al 2008;n/a;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-35013;3905;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2014;Geographic coordinates approximated;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Beta-1975527;3920;70;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2014;Geographic coordinates approximated;Non megalithic site
+Spain;40,22526;-3,7873;943591;4465810;Tagus basins;Humanejos;Varia;n/a;Ua-40220;3959;34;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2014;n/a;Non megalithic site
+Spain;40,4352942;-3,521655491;964760;4490507;Tagus basins;Camino de las Yeseras;Varia;n/a;UAM-MAD-3585;3962;314;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Pot;Funerary area;Liesau et al 2008;n/a;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-39311;3981;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Blasco et al 2014;Geographic coordinates approximated;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-35016;3990;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2014;Geographic coordinates approximated;Non megalithic site
+Spain;40,22526;-3,7873;943591;4465810;Tagus basins;Humanejos;Varia;n/a;Ua-41492;4009;56;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Blasco et al 2014;n/a;Non megalithic site
+Spain;40,43529;-3,52166;964759;4490506;Tagus basins;Camino de las Yeseras;Varia;n/a;Ua-39308;4021;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Blasco et al 2014;Geographic coordinates approximated;Non megalithic site
+Spain;40,4608465;-3,434807241;971952;4493807;Tagus basins;Soto del Henares;Varia;n/a;Ua-43536;4075;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Blasco et al 2014;n/a;Non megalithic site
+Portugal;41,1114;-7,10806;658850;4552848;Duero basins;Vale da Cerva;Varia;n/a;GrA-8402;4140;45;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Chamber;Cruz et al 2003;n/a;Bronze age site
+Spain;41,8844;1,114722;1339654;4686696;Ebro basin;Reguers de Sero;Cist;n/a;Beta-230406;4150;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;n/a;Telearchaeology.com;n/a;Bronze age cist
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27604;2180;27;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Portugal;38,3799111;-7,520246424;629248;4249004;South;Farisoa 1;Dolmen;n/a;OxTL-169i_i2;2185;260;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Ceramic shard;n/a;Whittle, Arnaud 1975/Boaventura 2011/Lozano Medina 2017;Geographic coordinates approximated;Outlier
+Spain;37,40986043;-6,059052883;760292;4144401;South;Montelirio;Tholos;n/a;Erl-17927;2299;68;n/a;n/a;n/a;n/a;n/a;n/a;C3 plants and terrestrial animals;Ivory;Funerary area;Garcia Sanjuan et al 2008;n/a;Not neolithic or chalcholitic period
+Spain;37,2478;-1,84306;1135166;4146444;South;Loma de la Gorriquia;Rundgraber & calero tomb;n/a;Beta-184196;2300;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Bone;Funerary area;Lorrio Alvarado, Montero Ruiz 2004;n/a;Outlier
+Portugal;38,37991;-7,52025;629248;4249004;South;Tholos de Farisoa 1b;Tholos;n/a;OxTL-169j_j3;2335;310;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Ceramic shard;n/a;Whittle, Arnaud 1975/Boaventura 2011/Lozano Medina 2017;Geographic coordinates approximated;Outlier
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27584;2396;42;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;36,7419;-4,11833;935966;4077366;South;Jardín;Cist;n/a;GrN-6830;2415;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Castro, Lull, Mico 1996;n/a;Outlier
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27576;2427;33;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-29077;2431;33;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27586;2438;24;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27578;2441;29;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27577;2442;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-29076;2446;28;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27574;2451;39;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27590;2466;33;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27607;2481;25;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27580;2484;48;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;I-11067;2490;90;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;n/a;n/a;Non megalithic site
+Spain;36,7419;-4,11833;935966;4077366;South;Jardín;Cist;n/a;GrN-6831;2500;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Funerary area;Castro, Lull, Mico 1996;n/a;Outlier
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27571;2509;31;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27583;2517;27;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27585;2535;31;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27469;2542;33;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27618;2555;28;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27570;2557;45;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;I-11068;2560;125;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27615;2564;49;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27617;2579;38;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;42,6664;-8,80944;515615;4723787;North;Monte da Dorna;Varia;n/a;CSIC-1037;4820;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Boaventura 2009;n/a;Lack of contextual data
+Spain;42,175;-8,66694;527507;4669260;North;As Pereiras;Tumulus;n/a;GaK-11821;4850;210;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas Valcarce/Vilaseco Vazquez 2003, 293-294/Fabregas Valcarce 1988;n/a;Lack of contextual data
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27591;2584;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27573;2592;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27599;2597;39;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27620;2658;38;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;38,7983;-6,66583;702704;4296982;South;La Pijotilla Tholos 3;Tholos;n/a;ITN_LUM_265;2716;96;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Ceramic shard;n/a;Odriozola et al 2008/Lozano Medina 2017;n/a;Outlier
+Portugal;38,3799111;-7,520246424;629248;4249004;South;Farisoa 1;Dolmen;n/a;OxTL-169i_i1;2745;380;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Ceramic shard;Chamber;Whittle, Arnaud 1975/Boaventura 2011/Lozano Medina 2017;Geographic coordinates approximated;Outlier
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27612;2848;36;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27589;2928;31;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;UBA-27567;2953;55;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;n/a;n/a;Non megalithic site
+Spain;36,4456;-6,21;750063;4036992;South;Campo de Hockey;Varia;n/a;CNA-832;3065;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Funerary area;n/a;n/a;Non megalithic structure
+Spain;37,33249;-1,74811;1142879;4156505;South;El Oficio;Rock-cut-tomb, artificial cave & hypogeum;n/a;OxA-4969;3405;70;-18,3;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Funerary area;Lozano Medina 2017;n/a;Non megalithic site
+Spain;37,8708;-6,13694;751835;4195344;South;La Traviesa;Cist;n/a;RCD-2111;3420;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Chamber;Garcia Sanjuan et al 2009;n/a;Bronze age site
+Spain;42,5211;-8,52083;539358;4707747;North;As Rozas 1;Tumulus;n/a;GaK-11189;5150;140;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294/Fabregas Valcarce 1988;n/a;Aberrant
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;I-11069;3470;95;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;García Sanjuán 2009, 19/Aubet Semmler et al 1983;n/a;Non megalithic site
+Spain;37,1328;-1,89778;1131266;4133292;South;Gatas;Cist;n/a;OxA-4472;3520;80;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Castro Garcia 1995/Garcia Sanjuan et al 2011;DeltaR values from Monge Soares, Matos Martins 2010. ;Bronze age site
+Spain;37,8708;-6,13694;751835;4195344;South;La Traviesa;Cist;n/a;RCD-2110;3520;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Chamber;Garcia Sanjuan 1997;n/a;Bronze age site
+Spain;42,5747;-8,975;502051;4713588;North;Ventin 4;Tumulus;n/a;CSIC-1108;5320;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294/Alonso, Bello 1997;n/a;Lack of contextual data
+Spain;37,7278;-5,4822;810040;4181442;South;Setefilla;Tumulus;n/a;I-11070;3520;95;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;García Sanjuán 2009, 19/Aubet Semmler et al 1983;n/a;Non megalithic site
+Spain;37,33249;-1,74811;1142879;4156505;South;El Oficio;Rock-cut-tomb, artificial cave & hypogeum;n/a;OxA-4968;3530;50;-17,6;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Funerary area;Lozano Medina 2017;n/a;Non megalithic site
+Spain;37,1328;-1,89778;1131266;4133292;South;Gatas;Cist;n/a;OxA-3969;3530;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Castro Garcia 1995/Garcia Sanjuan et al 2011;DeltaR values from Monge Soares, Matos Martins 2010. ;Bronze age site
+Spain;37,1328;-1,89778;1131266;4133292;South;Gatas;Cist;n/a;OxA-3965;3560;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Castro Garcia 1995/Garcia Sanjuan et al 2011;DeltaR values from Monge Soares, Matos Martins 2010. ;Bronze age site
+Spain;37,1328;-1,89778;1131266;4133292;South;Gatas;Cist;n/a;OxA-4475;3570;65;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Human bone;Funerary area;Castro Garcia 1995/Garcia Sanjuan et al 2011;DeltaR values from Monge Soares, Matos Martins 2010. ;Bronze age site
+Spain;37,33249;-1,74811;1142879;4156505;South;El Oficio;Rock-cut-tomb, artificial cave & hypogeum;n/a;OxA-4970;3635;60;-18;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Funerary area;Lozano Medina 2017;n/a;Non megalithic site
+Spain;42,9395;-8,3958;549295;4754273;North;Catasol 2;Varia;n/a;CSIC-984;5470;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Paleosol;Fabregas Valcarce/Vilaseco Vazquez 2003, 293-294/Filgueiras Rey 1992;n/a;Lack of contextual data
+Spain;37,35356675;-2,368442066;1087654;4154782;South;El Plantonal;Varia;n/a;MAD-505;3841;335;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2000/Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Spain;37,34262173;-2,123684451;1109459;4155126;South;Tumba Torroba;Varia;n/a;MAD-3782;3851;453;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Martinez et al 2006/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Portugal;38,943508;-8,030069;584900;4312300;South;Anta de Pardais 3;Passage grave;Corridor;Beta-590465;3870;30;-19,7;8,4;n/a;n/a;n/a;n/a;n/a;Human bone;UE18;Valera, Pereiro 2022;;n/a
+Spain;37,35356675;-2,368442066;1087654;4154782;South;El Plantonal;Varia;n/a;MAD-504;3989;358;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2000/Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Spain;37,38299324;-2,206848022;1101754;4159076;South;Cerro del Barrio 9;Varia;n/a;MAD-3385;4130;463;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Spain;37,35356675;-2,368442066;1087654;4154782;South;La Ruina;Varia;n/a;MAD-508;4206;351;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2000/Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;High STD
+Portugal;38,943508;-8,030069;584900;4312300;South;Anta de Pardais 3;Passage grave;Corridor;Beta-590464;4230;30;-19,3;8,8;n/a;n/a;n/a;n/a;n/a;Human bone;UE23;Valera, Pereiro 2022;;n/a
+Spain;37,35356675;-2,368442066;1087654;4154782;South;La Ruina;Varia;n/a;MAD-507;4368;377;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2000/Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;High STD
+Spain;42,9395;-8,3958;549295;4754273;North;Catasol 2;Varia;n/a;CSIC-985;5680;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294/Alonso/Bello 1997;n/a;Lack of contextual data
+Portugal;38,943508;-8,030069;584900;4312300;South;Anta de Pardais 3;Passage grave;Corridor;Beta-590466;4410;30;-19,3;10,2;n/a;n/a;n/a;n/a;n/a;Human bone;UE4;Valera, Pereiro 2022;;n/a
+Portugal;38,187811;-7,502853;631113;4227712;South;Sobreira de Cima 2;Rock-cut-tomb, artificial cave & hypogeum;n/a;SBC 5;4897;259;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Sediment (quartz);Mound soil;Dias et al 2008/Lozano Medina 2017;n/a;Aberrant for the regional context
+Spain;42,0263;2,4321;1447017;4716394;East;Font de la Venta;Varia;n/a;UBAR-60;5780;290;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Cruells et al 1992, 245;n/a;Dates are older than expected by archaeologists according to Mestres Torres et al. 1991, 359. Outlier
+Spain;37,57573807;-4,163679444;927181;4169753;South;Cerro Almanzora;Varia;n/a;MAD-2537;5139;525;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Portugal;38,1723;-7,6333;619714;4225814;South;Sobreira de Cima 1;Rock-cut-tomb, artificial cave & hypogeum;n/a;SBC 3;5231;369;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Sediment (quartz);Chamber;Dias et al 2008/Lozano Medina 2017;n/a;Aberrant for the regional context
+Spain;37,38302321;-2,20695661;1101744;4159079;South;Cerro del Barrio 1;Varia;n/a;MAD-3382;5363;534;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Spain;37,38296949;-2,206944774;1101746;4159073;South;Cerro del Barrio 4;Varia;n/a;MAD-3383;5381;378;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Spain;37,38311049;-2,206927058;1101746;4159089;South;Cerro del Barrio 7;Varia;n/a;MAD-3384;5389;380;n/a;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Mound;Roman et al 2005/Lozano Medina 2017;Geographic coordinates approximated;Non megalithic site
+Spain;36,4456;-6,21;750063;4036992;South;Campo de Hockey;Varia;n/a;CNA-835;5485;30;n/a;n/a;n/a;n/a;-135;20;n/a;Shell;Domestic pit;n/a;DeltaR values from Monge Soares, Matos Martins 2010;Non megalithic structure
+Spain;37,40986043;-6,059052883;760292;4144401;South;Montelirio;Tholos;n/a;Ua-39533;5491;387;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Painting;Painting;Bayliss et al 2017;n/a;Outlier
+Spain;42,3754;-8,6466;529095;4691518;North;Chan da Cruz 1;Varia;n/a;GaK-11395;5890;120;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Fabregas Vilcarce/Vilaseco Vazquez 2003, 293-294/Fabregas Valcarce 1988;n/a;Lack of contextual data
+Portugal;38,1723;-7,6333;619714;4225814;South;Sobreira de Cima 1;Rock-cut-tomb, artificial cave & hypogeum;n/a;SBC 2;5618;356;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Sediment (quartz);Chamber;Dias et al 2008/Lozano Medina 2017;n/a;Aberrant for the regional context
+Portugal;38,187811;-7,502853;631113;4227712;South;Sobreira de Cima 2;Rock-cut-tomb, artificial cave & hypogeum;n/a;SBC 4;5619;369;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Sediment (quartz);Mound soil;Dias et al 2008/Lozano Medina 2017;n/a;Aberrant for the regional context
+Spain;42,6256;-8,9375;505125;4719241;North;Alto da Barreira;Tumulus;n/a;CSIC-1039;6030;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294/Alonso/Bello 1997;n/a;Aberrant
+Portugal;37,1991;-8,588;536562;4117039;South;Alcalar 7;Tholos;n/a;Beta-180978;5810;40;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Carvalho 2008;n/a;Aberrant. Date too old for a tholos
+Portugal;38,187811;-7,502853;631113;4227712;South;Sobreira de Cima 2;Rock-cut-tomb, artificial cave & hypogeum;n/a;SBC 6;6041;334;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Sediment (quartz);Mound soil;Dias et al 2008/Lozano Medina 2017;n/a;Aberrant for the regional context
+Spain;43,0636;-8,98556;501175;4767877;North;Anta de Serramo;Passage grave;n/a;CAMS-88195;6050;110;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Painting;Steelman et al 2005;n/a;Outlier
+Portugal;41,2037;-8,04764;579848;4561807;Duero basins;Cabritos 3;Passage grave;n/a;Gif-7020;6100;70;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Cruz 1995;n/a;Outlier
+Spain;42,4164;-4,39111;879236;4706310;Duero basins;Velilla;Dolmen;n/a;GrN-20327;6130;190;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Jiménez Guijarro 2010;n/a;Aberrant
+Portugal;41,02;-8,05;579872;4541411;Duero basins;Cabras;Passage grave;n/a;CSIC-1055;6160;70;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Cruz 1995;n/a;Outlier
+Spain;37,2678;-1,7958;1139196;4148988;South;Cerro Virtud;Varia;n/a;Beta-101424;6160;180;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Funerary area;n/a;n/a;Outlier
+Spain;42,0263;2,4321;1447017;4716394;East;Font de la Venta;Varia;n/a;UBAR-61;6190;100;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Cruells et al 1992, 245;n/a;Dates are older than expected by archaeologists according to Mestres Torres et al 1991, 359. Outlier
+Portugal;39,4762;-7,35915;641130;4370908;Tagus basins;Figueira Branca;Varia;n/a;ICEN-823(bis);6210;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Oliveira 1997/Boaventura 2009;n/a;Probably is dating moments before the construction of the chamber. Outlier
+Portugal;39,4091;-7,3144;645118;4363531;Tagus basins;Anta das Castelhanas;Varia;n/a;ICEN-1264;6360;110;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Garcia Sanjuan 2006,152/Odriozola et al 2016;n/a;Outlier. Probably is dating moments before the construction of the chamber
+Spain;42,7111;-3,78333;927236;4741945;Ebro basin;Valdemuriel 2;Passage grave;n/a;GrN-14494;6565;45;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Cassen et al 1993, Tab 2, 513;n/a;Aberrant for the site context
+Spain;42,1136;-8,69528;525191;4662434;North;Chan de Prado 6;Tumulus;n/a;GrN-19620;6575;35;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Fabregas Valcarce, Vilaseco Vazquez 2003, 293-294/Abad et al 1995;n/a;Outlier
+Portugal;41,0237;-7,4417;631010;4542557;Duero basins;Carvalhal;Dolmen;n/a;GrA-5427;6730;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Cruz 2003;n/a;Aberrant in the site context
+Spain;42,6753;-3,7206;932624;4738289;Ebro basin;Rebolledo;Tumulus;n/a;GrN-19568;6775;30;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Infratumular layer N1 and 2;Delibes de Castro, Rojo Guerra 1997 ;Geographic coordinates approximated;Aberrant for the regional context
+Spain;42,7314437;-8,3443003;553677;4731201;North;Monte dos Escurros;Tumulus;n/a;Ua- 22223;6855;55;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Parga, Prieto 2010;n/a;Aberrant for the regional context
+Spain;43,46734005;-7,87727992;590814;4813326;North;Illade 0;Tumulus;n/a;GrN-19211;6940;200;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Vaquero 1999;Geographic coordinates approximated;Aberrant for the regional context
+Portugal;38,1723;-7,6333;619714;4225814;South;Sobreira de Cima 1;Rock-cut-tomb, artificial cave & hypogeum;n/a;SBC 1;7113;370;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Sediment (quartz);Chamber;Dias et al 2008/Lozano Medina 2017;n/a;Aberrant for the regional context
+Spain;43,46734005;-7,87727992;590814;4813326;North;Illade 0;Tumulus;n/a;GrN-19209;8208;60;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Vaquero 1999;Geographic coordinates approximated. ;Aberrant for the regional context
+Spain;42,67327705;-3,717493601;932892;4738080;Ebro basin;Fuentepecina II;Dolmen;n/a;GrN-18668;8260;50;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;n/a;Delibes de Castro, Rojo Guerra 1997;Geographic coordinates approximated;Aberrant for the regional context
+Spain;42,7314437;-8,3443003;553677;4731201;North;Monte dos Escurros;Tumulus;n/a;CSIC- 1818;8715;48;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound;Mañana, 2003;n/a;Aberrant for the regional context
+Spain;42,7314437;-8,3443003;553677;4731201;North;Monte dos Escurros;Tumulus;n/a;Ua- 22221;8805;65;n/a;n/a;n/a;n/a;n/a;n/a;n/a;Charcoal;Mound soil;Parga, Prieto 2010;n/a;Aberrant for the regional context

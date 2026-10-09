@@ -122,7 +122,7 @@ run_oxcal_sites_parallel <- function(site_ids, site_data, model, interval, mcnsi
 
 # ---------------------------------------------------------------------------
 # Regional trapezoidal model runner (Lee, Bronk Ramsey 2012)
-# One OxCal script per region. Results cached as .rds and reloaded on re-runs.
+# One OxCal script per region.
 
 #' Run the regional trapezoidal model for all regions (parallelised if n_cores > 1)
 #' @param region_names          character vector of region names
@@ -133,10 +133,11 @@ run_oxcal_sites_parallel <- function(site_ids, site_data, model, interval, mcnsi
 #' @param nsim                  posterior samples to draw per parameter
 #' @param n_cores               number of CPU cores to use for parallel processing
 #' @param convergence_threshold OxCal Convergence option (95 = default strict; 0 = disabled for speed)
+#' @param force_recompute logical; if TRUE, re-run even if cached .rds exists
 #' @return named list; each element has onset/peak/decline/disappear samples
 run_regional_trapezoid <- function(region_names, dates_earliest, oxcal_path,
                                    scripts_dir, results_dir, nsim = 10000, n_cores = 6,
-                                   convergence_threshold = 95) {
+                                   convergence_threshold = 95, force_recompute = FALSE) {
 
   library(parallel)
   setOxcalExecutablePath(oxcal_path)
@@ -150,7 +151,7 @@ run_regional_trapezoid <- function(region_names, dates_earliest, oxcal_path,
     safe   <- gsub("[^A-Za-z0-9]", "_", region_name)
     fn_rds <- file.path(results_dir, paste0("trapezoid_regional_", safe, ".rds"))
 
-    if (file.exists(fn_rds)) {
+    if (!force_recompute && file.exists(fn_rds)) {
       message(sprintf("[%s] Loading cached posteriors.", region_name))
       out[[region_name]] <- readRDS(fn_rds)
       next
@@ -183,6 +184,7 @@ run_regional_trapezoid <- function(region_names, dates_earliest, oxcal_path,
         c14ages               = rdata$C14,
         errors                = rdata$STD,
         lab_ids               = rdata$LabNumber,
+        materials             = rdata$Material,
         fn                    = fn_script,
         iterations            = nsim,
         convergence_threshold = convergence_threshold
@@ -246,6 +248,7 @@ run_regional_trapezoid <- function(region_names, dates_earliest, oxcal_path,
       c14ages               = rdata$C14,
       errors                = rdata$STD,
       lab_ids               = rdata$LabNumber,
+      materials             = rdata$Material,
       fn                    = fn_script,
       iterations            = nsim,
       convergence_threshold = convergence_threshold
