@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megalithic complex
 
 [![R Version](https://img.shields.io/badge/R-≥4.3.2-blue.svg)](https://www.r-project.org/)
