@@ -2,7 +2,7 @@
 
 This folder contains the fully reproducible manuscript compiled with [Quarto](https://quarto.org/), corresponding to:
 
-> Carrero-Pazos, M., Bevan, A., Crema, E.R., Rodríguez-Rellán, C., Díaz-Rodríguez, M., Martín Seijo, M., Fábregas Valcarce, R. (2026). *Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megaliths*. [Journal name].
+> Carrero-Pazos, M., Bevan, A., Crema, E.R., Rodríguez-Rellán, C., Díaz-Rodríguez, M., Martín Seijo, M., Fábregas Valcarce, R. (2026). *Material type bias affects radiocarbon-based diffusion models for the origin and spread of Iberian megaliths*. PLOS One.
 
 ---
 
